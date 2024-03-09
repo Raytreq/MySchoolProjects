@@ -1,0 +1,15 @@
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\bin\Debug\netstandard2.0\krozmus_relativelayout.deps.json
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\bin\Debug\netstandard2.0\krozmus_relativelayout.dll
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\bin\Debug\netstandard2.0\krozmus_relativelayout.pdb
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.csproj.AssemblyReference.cache
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.AssemblyInfoInputs.cache
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.AssemblyInfo.cs
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.dll
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\refint\krozmus_relativelayout.dll
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\krozmus_relativelayout.pdb
+C:\Users\Krzysiek\source\repos\krozmus_relativelayout\krozmus_relativelayout\krozmus_relativelayout\obj\Debug\netstandard2.0\ref\krozmus_relativelayout.dll

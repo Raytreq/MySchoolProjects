@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>JS: Zdarzenia</title>
+        <style>
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                function klikme() {
+                    console.log('Klik!');
+                }
+                const element = document.querySelector('#but');
+                element.onclick = klikme;
+                element.onmouseover = function() {
+                    console.log('Najechano przycisk!');
+                }    
+            });
+        </script>
+    </head>
+    <body>
+        <button id='but'>Zobacz</button>
+    </body>
+</html>

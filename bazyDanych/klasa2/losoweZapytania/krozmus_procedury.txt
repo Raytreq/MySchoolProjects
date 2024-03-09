@@ -1,0 +1,67 @@
+Krzysztof Rozmus 24/2TP
+           
+[] - przykładowe wywołanie procedury
+
+1)
+delimiter //
+CREATE PROCEDURE jeden(IN koszt DECIMAL(10,2))
+BEGIN
+SELECT Sygnatura, Tytul, Wydawnictwo, Cena FROM ksiazki WHERE Cena<koszt;
+END
+//
+
+[ CALL jeden(50); ]
+
+2)
+delimiter //
+CREATE PROCEDURE dwa(IN im VARCHAR(35), naz VARCHAR(35))
+BEGIN
+SELECT Imie, Nazwisko, Nr_czytelnika, Miasto, Nr_legitymacji FROM czytelnicy WHERE Imie=im AND Nazwisko=naz;
+END
+//
+
+[ CALL dwa("Rafal", "Szala"); ]
+
+3)
+delimiter //
+CREATE PROCEDURE trzy(IN parametr FLOAT, tytul_ksiazki VARCHAR(100))
+BEGIN
+UPDATE ksiazki SET Cena = Cena + ((parametr*0.01)*Cena) WHERE Tytul=tytul_ksiazki;
+END
+//
+
+[ CALL trzy(50, "Metro 2033"); ]
+SELECT * FROM ksiazki;
+
+4)
+delimiter //
+CREATE FUNCTION cztery() RETURNS INT, VARCHAR
+AS
+BEGIN
+RETURN (SELECT Nr_czytelnika, Imie, Nazwisko, DATEDIFF(Data_zwrotu, data_wypozyczenia) FROM czytelnicy INNER JOIN wypozyczenia USING(Nr_czytelnika) GROUP BY DATEDIFF(Data_zwrotu, data_wypozyczenia) DESC HAVING MAX(DATEDIFF(Data_zwrotu, data_wypozyczenia)) LIMIT 1;)
+END
+//
+
+Będę szczery, siedziałem nad tym dobrą godzinę wymyślając to poprzez czytanie wszelakich pokracznych dokumentacji, żeby napisać samego selecta w środku, a kiedy w końcu udało mi się go uruchomić tak żeby pozornie wykonywał chociaż prawidłowo to polecenie to okazało się, że pokazuje mi złego czytelnika do maksymalnej ilości dni i to zadanie mam po prostu kompletnie źle.
+
+5)
+delimiter //
+CREATE FUNCTION piec(@Nr_czytel INT) RETURNS VARCHAR, INT
+BEGIN
+SELECT count(data_wypozyczenia) FROM wypozyczenia INNER JOIN czytelnicy WHERE Nr_czytelnika=@Nr_czytel into wynik;
+	RETURN "Ilość wypożyczonych", @wynik
+END
+//
+
+Z 5 tu też miałem problem, nie wiedziałem jak dokładnie wymieszać ten select z funkcją bo i w pdfie i na roznych dokumentacjach w internecie nie mogłem znaleźć żadnego podobnego przykładu.
+
+6)
+delimiter //
+CREATE PROCEDURE zwieksz_pensje(IN id INT, kwota DECIMAL(10,2))
+BEGIN
+UPDATE pracownicy SET Wynagrodzenie = Wynagrodzenie + kwota WHERE Id_pracownika=id;
+END
+//
+
+[ CALL zwieksz_pensje(1, 300); ]
+SELECT * FROM pracownicy;

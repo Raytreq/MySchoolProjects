@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>JS: Events</title>
+        <style>
+        .done{
+            background: green;
+            color: white;
+        }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const textF = document.querySelector('#inputin');
+                textF.addEventListener('keyup', function(e) {
+                    //console.log('Naciśnięto przycisk: ' + e.key);
+                    document.querySelector('#printit').innerText += e.key;
+                });
+            });
+        </script>
+    </head>
+    <body>
+    <input type='text' id='inputin'/>
+    <p id='printit'></p>
+    </body>
+</html>

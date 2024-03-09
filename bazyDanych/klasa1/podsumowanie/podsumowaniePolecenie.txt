@@ -1,0 +1,5 @@
+Polecenie nauczyciela:
+Poniżej link do strony z zadaniami. Jeśli będę chciał coś dodatkowego to wtedy z edytuje to zadanie najpóźniej do końca dzisiejszego dnia. Treść zadania z tej strony na razie będzie nie zmieniona ew. możecie sobie użyć danych z poprzedniej bazy ale trzeba odpowiednio przerobić te dane. Przypominam że robicie mi do zadania 15 włącznie.
+
+Link:
+https://ikot.edu.pl/artykuly,bazy_danych,mysql_cwiczenia_1,85.html

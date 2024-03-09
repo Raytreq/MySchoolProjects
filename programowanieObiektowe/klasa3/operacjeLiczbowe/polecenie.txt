@@ -1,0 +1,3 @@
+Polecenie nauczyciela:
+1. Napisać program porównujący dwie daty. Daty należy zdefiniować za pomocą zmiennych: dzień, miesiąc, rok. Należy wyświetlić informację, która data jest starsza.
+2. Napisać program obliczający sumę, iloczyn, element najmniejszy, największy oraz średnią arytmetyczną dla ciągu cyfr zakończonego 0.

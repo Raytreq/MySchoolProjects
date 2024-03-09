@@ -1,0 +1,94 @@
+Krzysztof Rozmus 3TP
+
+1)
+using System;
+
+
+struct Data
+{
+    public int rok;
+    public int miesiac;
+    public int dzien;
+}
+
+
+class Program {
+    static void Main()
+    {
+        Data date1;
+        date1.rok = 2001;
+        date1.miesiac = 06;
+        date1.dzien = 11;
+        
+        Data date2;
+        date2.rok = 2005;
+        date2.miesiac = 10;
+        date2.dzien = 06;
+
+        if (date1.rok == date2.rok) {
+            if(date1.miesiac == date2.miesiac) {
+                if(date1.dzien == date2.dzien) {
+                    Console.WriteLine("Daty '{0}.{1}.{2}' oraz '{3}.{4}.{5}' są takie same", date1.dzien, date1.miesiac, date1.rok, date2.dzien, date2.miesiac, date2.rok);
+                }
+                else if(date1.dzien > date2.dzien) {
+                    Console.WriteLine("Data '{0}.{1}.{2}' jest starsza od drugiej daty", date2.dzien, date2.miesiac, date2.rok);
+                }
+                else {
+                    Console.WriteLine("Data '{0}.{1}.{2}' jest starsza od drugiej daty", date1.dzien, date1.miesiac, date1.rok);
+                }
+            }
+            else if(date1.miesiac > date2.miesiac) {
+                Console.WriteLine("Data '{0}.{1}.{2}' jest starsza od drugiej daty", date2.dzien, date2.miesiac, date2.rok);
+            }
+            else {
+                Console.WriteLine("Data '{0}.{1}.{2}' jest starsza od drugiej daty", date1.dzien, date1.miesiac, date1.rok);
+            }
+        }
+        else if(date1.rok > date2.rok) {
+            Console.WriteLine("Data '{0}.{1}.{2}' jest starsza od drugiej daty", date2.dzien, date2.miesiac, date2.rok);
+        }
+        else {
+            Console.WriteLine("Data '{0}.{1}.{2}' jest starsza od drugiej daty", date1.dzien, date1.miesiac, date1.rok);
+        }
+    }
+}
+
+
+2)
+using System;
+
+
+class Program
+{
+    static void Main()
+    {
+        Int64 input = 1;
+        List<Int64> Ciag = new List<Int64>();
+
+        while(input != 0) {
+            Console.Write("Podaj dowolną liczbę (wpisz 0 aby zakończyć): ");
+            Int64.TryParse(Console.ReadLine(), out input);
+            if (input != 0) {
+                Ciag.Add(input);
+            }
+        }
+        Console.WriteLine("");
+        Console.WriteLine("Wszystkie liczby to: ");
+        
+        for(int i = 0; i < Ciag.Count; i++) {
+            Console.Write("{0}, ", Ciag[i]);
+        }
+        Console.WriteLine("");
+        Console.WriteLine("Suma to: {0}",Ciag.Sum());
+        Int64 iloczyn = 1;
+
+        for(int i = 0; i < Ciag.Count; i++) {
+            iloczyn = iloczyn * Ciag[i];
+        }
+
+        Console.WriteLine("Iloczyn to: {0}", iloczyn);
+        Console.WriteLine("Element najmniejszy to: {0}", Ciag.Min());
+        Console.WriteLine("Element największy to: {0}", Ciag.Max());
+        Console.WriteLine("Średnia arytmetyczna to: {0}", Ciag.Average());
+    }
+}

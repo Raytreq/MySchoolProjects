@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "TC2Cvw2l1N3CUIVNn3H/OtjLDkuEiHlzetND2JuMg9wSNxrLe+hoO3AGIXxcFhuklEVhDkWPeLPZ7WvZosQ/8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rejtr\\Desktop\\apka_krozmus_strona2\\apka_krozmus_strona2\\apka_krozmus_strona2.iOS\\apka_krozmus_strona2.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rejtr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

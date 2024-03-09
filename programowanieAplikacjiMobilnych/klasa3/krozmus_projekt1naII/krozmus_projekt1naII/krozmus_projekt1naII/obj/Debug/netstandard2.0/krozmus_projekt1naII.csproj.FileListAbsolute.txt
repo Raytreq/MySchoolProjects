@@ -1,0 +1,15 @@
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.csproj.AssemblyReference.cache
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.AssemblyInfoInputs.cache
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.AssemblyInfo.cs
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\bin\Debug\netstandard2.0\krozmus_projekt1naII.deps.json
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\bin\Debug\netstandard2.0\krozmus_projekt1naII.dll
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\bin\Debug\netstandard2.0\krozmus_projekt1naII.pdb
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.dll
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\refint\krozmus_projekt1naII.dll
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\krozmus_projekt1naII.pdb
+C:\Users\Krzysiek\source\repos\krozmus_projekt1naII\krozmus_projekt1naII\krozmus_projekt1naII\obj\Debug\netstandard2.0\ref\krozmus_projekt1naII.dll

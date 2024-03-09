@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekcje</title>
+    <style>
+        header, nav, main, footer, article, section
+        {
+            border:1px solid black;
+        }
+
+        header
+        {
+            background-color: #ffce73;
+            padding:20px;
+        }
+
+        section
+        {
+            display: flex;
+            background-color:rgb(180 228 255);
+            padding:20px;
+        }
+
+        nav
+        {
+            flex: 1;
+            background-color: #fff2b8;
+            padding: 20px;
+        }
+
+        main
+        {
+            flex: 3;
+            background-color: rebeccapurple;
+            padding: 20px;
+        }
+
+        article
+        {
+            background-color: coral;
+            padding: 20px;
+        }
+
+        footer
+        {
+            background-color: orchid;
+            padding: 20px;
+        }
+
+        aside
+        {
+            background-color: rgb(49, 160, 104);
+            padding: 20px;
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Krzysztof Rozmus 4TP</h2>
+        <nav>Nawigacja główna</nav>
+    </header>
+
+    <section>
+        <nav>Nawigacja lewo</nav>
+        <main>
+            <article>
+                <h2>Google Chrome</h2>
+                <p>Google Chrome is a web browser developed by Google, relased in 2008.</p>
+            </article>
+
+            <article>
+                <h2>Mozzila Firefo Chrome</h2>
+                <p>...</p>
+            </article>
+
+            <article>
+                <h2>Google Chromium</h2>
+                <p>...</p>
+            </article>
+        </main>
+        <aside>
+            <nav>Dodatkowa nawigacja</nav>
+            <section>Reklama 1</section>
+            <section>Reklama 2</section>
+            <section>Reklama 3</section>
+        </aside>
+    </section>
+    <footer>25.11.2023</footer>
+</body>
+</html>

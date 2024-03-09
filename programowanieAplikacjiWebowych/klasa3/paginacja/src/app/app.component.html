@@ -1,0 +1,16 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<div *ngIf="home == true; else elseBlock">
+    <button type="button" routerLink="/list" (click)="ListChange()"><h3>Lista</h3></button>
+    <h3>Przykładowa treść na stronie głównej</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel venenatis justo. Donec eu erat et urna scelerisque accumsan dignissim sit amet velit. Sed vel nisl eget mauris venenatis mollis. Ut in semper felis. Nulla mollis risus nisi, a malesuada nisl vehicula quis. Duis malesuada augue neque, convallis auctor felis vulputate sed. Nulla facilisi.
+    <br>
+    Mauris efficitur lacinia porta. Morbi aliquam mi in ipsum vulputate lobortis eu a magna. Fusce cursus nisi nisi, ut bibendum neque fringilla sed. Nunc porta ullamcorper maximus. Suspendisse augue dui, ultricies non est eget, facilisis convallis quam. Duis consectetur luctus nisl, at convallis enim fermentum a. Suspendisse leo sapien, molestie eu libero id, interdum lacinia velit. Vestibulum sed est magna. In posuere porta velit, varius euismod magna pulvinar eget. Suspendisse et odio in orci porttitor interdum at ac felis. Nulla facilisi. Integer non odio at justo egestas placerat.
+    <br>
+    Nullam pellentesque gravida libero, vel consectetur quam viverra vitae. Mauris vel tortor arcu. Ut porta lacinia gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus maximus metus ligula, vel sodales metus laoreet eget. Curabitur turpis sem, interdum a velit id, blandit rutrum leo. Vivamus aliquam, libero at lobortis faucibus, nisl odio accumsan lacus, at consequat neque nulla ac massa. Quisque hendrerit diam laoreet volutpat accumsan. Aenean consectetur tempor odio non posuere. </p>
+</div>
+<ng-template #elseBlock>
+    <button type="button" routerLink="" (click)="HomeChange()"><h3>Strona Główna</h3></button>
+    <router-outlet></router-outlet>
+</ng-template>

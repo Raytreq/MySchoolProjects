@@ -1,0 +1,25 @@
+2TP/24 Krzysztof Rozmus
+
+1)
+SELECT sygnatura, tytul, imie, nazwisko
+	FROM ksiazki INNER JOIN autor USING (id_autor);
+2)
+SELECT id_pracownika, imie, nazwisko, nr_transakcji, data_wypozyczenia
+	FROM pracownicy INNER JOIN wypozyczenia USING (id_pracownika) 
+	WHERE data_wypozyczenia BETWEEN "2018-01-01" AND "2018-12-31";
+3)
+SELECT tytul, sygnatura, data_wypozyczenia 
+	FROM ksiazki INNER JOIN wypozyczenia USING (sygnatura) 
+	WHERE data_zwrotu IS null;
+4)
+SELECT nr_czytelnika, imie, nazwisko, nr_legitymacji, data_wypozyczenia, data_zwrotu
+	FROM czytelnicy INNER JOIN wypozyczenia USING (nr_czytelnika)
+	WHERE (data_zwrotu-data_wypozyczenia) = (SELECT MAX(data_zwrotu-data_wypozyczenia) FROM wypozyczenia);
+5)
+SELECT sygnatura, tytul, imie, nazwisko, nazwa
+	FROM ksiazki INNER JOIN autor USING (id_autor)
+    	INNER JOIN dzialy USING (id_dzial);
+6)
+SELECT nr_czytelnika, imie, nazwisko, nr_legitymacji, data_wypozyczenia 
+	FROM czytelnicy INNER JOIN wypozyczenia USING (nr_czytelnika) 
+	WHERE data_zwrotu IS null;

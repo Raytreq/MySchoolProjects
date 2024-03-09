@@ -1,0 +1,9 @@
+Polecenie nauczyciela:
+Wykonaj aplikację webową, która będzie zawierać:
+- stronę główną z nawigacją (możliwością przejścia na inne podstrony)
+- wyświetlanie listy elementów na podstronie
+- możliwość przejścia do szczegółów elementu wybranego poprzez url
+- dane mają być ładowane za pomocą utworzonego serwisu
+- serwis wczytuje dane z pliku json (można te dane wygenerować używając np.  https://www.mockaroo.com/)
+- wprowadzić wyszukiwarkę, które będzie wyszukiwać dane z listy wg pewnych kryteriów
+- wprowadzić paginację, aby na stronie było wyświetlanych maksymalnie 10 elementów

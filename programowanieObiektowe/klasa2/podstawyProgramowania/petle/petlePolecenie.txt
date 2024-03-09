@@ -1,0 +1,11 @@
+Polecenie nauczyciela:
+Po przećwiczeniu przykładów z linków proszę o wykonie zadań 1-6 za pomocą while i do...while
+Jedno zadanie - dwie wersje - jeden plik (w komentarzu wysyłacie while lub do while - jak odblokuje, to powinno mi zadziałać dwa razy)
+
+
+Zad 2. użyć funkcji sqrt  + pow dla argumentów rzeczywistych (można wynik wyświetlić dwa razy)
+
+Zad 3. wyświetl dodatkowo sumę tych licz wpisywanych z klawiatury
+
+
+Zad 6. Użyć operatorów logicznych && lub ||

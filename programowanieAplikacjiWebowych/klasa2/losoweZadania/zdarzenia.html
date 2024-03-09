@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>JS: Zdarzenia</title>
+        <!-- <style>
+        /* .done{
+            background: pink;
+            color: white;
+        }
+        </style> */
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                const p = document.querySelectorAll('p');
+                for (let i=0; i<p.length; i++) {
+                    p[i].onclick = function() {
+                        this.classList.add('done');
+                    }
+                }
+            });
+        </script> -->
+    </head>
+    <body>
+        <!-- <p>jeden</p>
+        <p>dwa</p>
+        <p>trzy</p> -->
+        <script type="text/javascript">
+            p[i].onclick=function(){
+                if(this.className=="clone")
+            
+            {
+            this.classList.remove("done");
+            }        
+            else{
+                this.classList.add("done");
+            }
+            }
+</script>
+        
+    </body>
+</html>

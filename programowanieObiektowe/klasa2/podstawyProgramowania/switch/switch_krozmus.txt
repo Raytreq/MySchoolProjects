@@ -1,0 +1,173 @@
+Krzysztof Rozmus 2TP/24
+
+1)
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    float a;
+    float b;
+    string oper;
+
+    cout << "Podaj pierwszą liczbę działania: \n";
+    cin >> a;
+    cout << "Podaj drugą liczbę działania: \n";
+    cin >> b;
+    cout << "Wybierz operację: \n";
+    cout << "- + * / \n";
+    
+    cin >> oper;
+
+    if(oper == "-") {
+        cout << "Wynik działania to: " << a-b << endl;
+    }
+    if(oper == "+") {
+        cout << "Wynik działania to: " << a+b << endl;
+    }
+    if(oper == "*") {
+        cout << "Wynik działania to: " << a*b << endl;
+    }
+    if(oper == "/") {
+        cout << "Wynik działania to: " << a/b << endl;
+    }
+    
+    return 0;
+}
+
+2)
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    int h;
+    
+    char polec;
+    
+    cout << "Wybierz jakiej figury chciałbyś obliczyć pole\n" ;
+    cout << "Figury do wyboru: \na) Kwadrat\nb) Prostokąt\nc) Trójkąt\nd) Trapez\n";
+    cout << "Wybrana figura: ";
+    cin >> polec;
+    
+    switch(polec)
+    {
+        case 'a':
+            cout << "Podaj bok kwadratu: ";
+            cin >> a;
+            cout << "\nPole tego kwadratu to: " << a*a << endl;
+            break;
+        case 'b':
+            cout << "Podaj pierwszy bok prostokąta: ";
+            cin >> a;
+            cout << "Podaj drugi bok prostokąta: ";
+            cin >> b ;
+            cout << "\nPole tego prostokąta to: " << a*b << endl;
+            break;
+        case 'c':
+            cout << "Podaj podstawę trójkąta: ";
+            cin >> a;
+            cout << "Podaj wysokość trójkąta: ";
+            cin >> h;
+            cout << "\nPole tego trójkąta to: " << (a*h)/2 << endl;
+            break;
+        case 'd':
+            cout << "Podaj podstawę trapeza: ";
+            cin >> a;
+            cout << "Podaj drugi bok trapeza: ";
+            cin >> b;
+            cout << "Podaj wysokość trapezu: ";
+            cin >> h;
+            cout << "\nPole tego trapeza to: " << ((a+b)*h)/2 << endl;
+            break;
+        default:
+            cout<<"Wybrałeś niepoprawną figurę";
+    }
+    return 0;
+}
+
+3)
+#include <iostream>
+#include<ctime>
+using namespace std;
+
+int main() {
+    int pyt;
+    char odp;
+    srand(time(NULL));
+    
+    pyt = (rand()%4);
+    
+    switch(pyt) {
+        case 0:
+            cout<<"Czelność i bezczelność: \n";
+            
+		    cout << "a) To synonimy\n";
+		    cout << "b) To homonimy\n";
+		    cout << "c) Mają przeciwstawne znaczenia\n";
+		    cout << "d) Mają tyle samo głosek\n";
+		    cout << "Twoja odpowiedź to: ";
+		    
+		    cin >> odp;
+		    
+		    if(odp=='a' || odp=='A')
+		        cout << "Gratulacje! Poprawna odpowiedź";
+		    else
+		        cout << "Zła odpowiedź";
+        break;
+        case 1:
+            cout<<"Kucharska budyniówka to: \n";
+            
+			cout << "a) Drewniana kopystka\n";
+			cout << "b) Ściereczka\n";
+			cout << "c) Czapka\n";
+			cout << "d) Rózga do ubijania\n";
+			cout << "Twoja odpowiedź to: ";
+			
+			cin >> odp;
+			
+		    if(odp=='c' || odp=='C')
+		        cout << "Gratulacje! Poprawna odpowiedź";
+		    else
+		        cout << "Zła odpowiedź";
+            break;
+        case 2:
+            cout<<"Największy półwysep świata to Półwysep: \n";
+            
+			cout << "a) Iberyjski\n";
+			cout << "b) Apeniński\n";
+			cout << "c) Krymski\n";
+			cout << "d) Arabski\n";
+			cout << "Twoja odpowiedź to: ";
+			
+			cin >> odp;
+			
+		    if(odp=='d' || odp=='D')
+		        cout << "Gratulacje! Poprawna odpowiedź";
+		    else
+		        cout << "Zła odpowiedź";
+            break;
+        case 3:
+            cout<<"Co kaftan bezpieczeństwa ma znacznie dłuższe niż zwykły kaftan?\n";
+            
+			cout << "a) Przód\n";
+			cout << "b) Rękawy\n";
+			cout << "c) Tył\n";
+			cout << "d) Kołnierz\n";
+			cout << "Twoja odpowiedź to: ";
+			
+			cin >> odp;
+			
+		    if(odp=='b' || odp=='B')
+		        cout << "Gratulacje! Poprawna odpowiedź";
+		    else
+		        cout << "Zła odpowiedź";
+            break;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,130 @@
+CREATE DATABASE firma_szkoleniowa; 
+
+
+CREATE TABLE kategorie(
+Id_kategoria INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Nazwa VARCHAR(80));
+
+
+
+CREATE TABLE adres(
+Id_adres INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Miasto VARCHAR(80) NOT NULL,
+Kod_pocztowy INT,
+Ulica VARCHAR(50),
+Nr_lokalu INT
+);
+
+
+
+CREATE TABLE klienci(
+Id_klient INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Imie VARCHAR(50) NOT NULL,
+Nazwisko VARCHAR(50) NOT NULL,
+PESEL VARCHAR(12),
+Nr_telefonu VARCHAR(15),
+Adres INT,
+E_mail VARCHAR(100) DEFAULT NULL,
+CONSTRAINT FK_adres_kl FOREIGN KEY (Adres)
+REFERENCES adres(Id_adres)
+);
+
+
+
+CREATE TABLE wykladowcy(
+Id_wykladowca INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Imie VARCHAR(50) NOT NULL,
+Nazwisko VARCHAR(50) NOT NULL,
+PESEL VARCHAR(12),
+Nr_telefonu VARCHAR(15),
+Adres INT,
+Data_zatrudnienia DATE,
+Adres_email VARCHAR(100),
+CONSTRAINT FK_adres_wyk FOREIGN KEY(Adres)
+REFERENCES adres(Id_adres)
+);
+
+
+
+CREATE TABLE kursy(
+Id_kurs INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Tytul VARCHAR(80), 
+Opis VARCHAR(255),
+Id_wykladowca INT,
+Id_kategoria INT,
+Cena DECIMAL(10,2),
+CONSTRAINT FK_wyk FOREIGN KEY(Id_wykladowca)
+REFERENCES wykladowcy(Id_wykladowca),
+CONSTRAINT FK_kat FOREIGN KEY (Id_kategoria)
+REFERENCES kategorie(Id_kategoria)
+);
+
+
+
+CREATE TABLE zakupy (
+Id_Zakup INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Klient INT,
+Kurs INT,
+Data_rozpoczecia DATE,
+Data_zakonczenia DATE,
+CONSTRAINT FK_klient FOREIGN KEY(Klient)
+REFERENCES klienci(Id_klient),
+CONSTRAINT FK_kurs FOREIGN KEY(Kurs)
+REFERENCES kursy(Id_kurs)
+);
+
+
+
+
+INSERT INTO kategorie VALUES(NULL, "Informatyka"), 
+(NULL, "Gastronomiczne"), 
+(NULL, "BHP"), 
+(NULL, "Medyczne"),
+(NULL, "Rozwój osobisty"),
+(NULL, "Językowe");
+
+
+INSERT INTO adres VALUES(NULL, "Bielsko-Biała", "43308", "Poziomkowa", 12), 
+(NULL, "Żywiec", "34331", "Długa",  7), 
+(NULL, "Bielsko-Biała", "43302", "Malinowa", 415),
+(NULL, "Bielsko-Biała", "43500", "Wesoła",  43),
+(NULL, "Katowice", "40012", "Agrestowa",  2), 
+(NULL, "Żywiec", "34321", "Żywiecka",  983);
+(NULL, "Bielsko-Biała", "43512", "Krótka",  57), 
+(NULL, "Bielsko-Biała", "43308", "Żywiecka", 765),
+(NULL, "Bielsko-Biała", "43382", "3 Maja",  89),
+(NULL, "Żywiec", "34300", "Deszczowa",  16),
+(NULL, "Katowice", "40016", "Arbuzowa",  343), 
+(NULL, "Żywiec", "34326", "Pomarańczowa",  693);
+
+
+INSERT INTO klienci VALUES(NULL, "Marek", "Marekwica", "823456928745", "826745233", 4,"lubie.placki@tlen.pl"),
+(NULL, "Julia", "Szostak", "439816412096", "784762881", 1,"itsumademobaka1@google.com"),
+(NULL, "Paulina", "Groś", "823803800995", "092796874", 2,"ciastkowy_potwor1417@tlen.pl"),
+(NULL, "Jan", "Sawicki", "303694198860", "517551168", 6,"slonecznyslon@onet.pl"),
+(NULL, "Oliwia", "Tarnawa", "605232804669", "809426038", 3,"otarnawa65@google.com"),
+(NULL, "Bartłomiej", "Kowalski", "690714773473", "408509485", 7,"sussbonbon222@google.com");
+
+
+INSERT INTO wykladowcy VALUES(NULL, "Adam", "Drzewucki", "746968848569", "094963820", 5, "2020-03-012", "adadrzew6@gmail.com"),
+(NULL, "Emilia", "Stec", "829308969236", "890554175", 11, "2015-10-30", "silentblossom@google.com"),
+(NULL, "Olga", "Wojcieszyk", "758112812116", "739436885", 8, "2016-01-03", "kapcioszek@onet.pl"),
+(NULL, "Oliwier", "Koczur", "348002116233", "169799052", 10, "2018-12-018", "gk.redemptor9292@onet.pl"),
+(NULL, "Piotr", "Kowalski", "517651292594", "148333840", 12, "2017-06-22", "ninjazpolski@google.com"),
+(NULL, "Paweł", "Białożyt", "193238854466", "816222638", 9, "2018-08-31", "niejestemgruby16@tlen.pl");
+
+
+INSERT INTO kursy VALUES(NULL, "Jak złożyć komputer jako kompletny żółtodziób elektroniki", "Planujesz złożenie sobie wreszcie jakiejś porządnej maszyny? Jeśli tak to pewnie zemdlałeś gdy zobaczyłeś jak tak właściwie ten plan może być skomplikowany i czasochłonny. Jednak nie martw się! Ten kurs może okazać się pomocą idealną dla ciebie, wyjaśniającą od najprostszych tematów, aspekty takie jak dobieranie współgrających komponentów, kończąc nawet na tajemnikach używania pasty termoizolacyjnej i tego czy tak właściwie powineneś jej używać wcale", 3, 1, "49.99"), 
+(NULL, "Guten Tag Deutschland! - Podstawy Języka Niemieckiego", "Kurs zapozna cię dobrze z podstawami języka niemieckiego i przygotuje cię do bardziej skomplikowanej nauki", 5, 6, "30.00"),
+(NULL, "Szkolenie dla nauczyciela oraz instruktora BHP","Podstawowe szkolenie instruktora BHP", 2, 3, "80.00"),
+(NULL, "Zaawansowane szkolenie chirurgiczne","Kurs mający na celu pomóc przyszłym chirurgom oraz wprowadzający ich w bardziej zaawansowane aspekty operacji", 6, 4, "49.99"),
+(NULL, "Sekrety Sukcesu","W tym kursie przestawię ci jak osiągnąć sukces i zacząć eksplorować samego siebie oraz swoje talenty", 4, 5, "45.99"),
+(NULL, "Jak ugotować coś przepysznego i przy okazji nie ugotować swojej kuchni, czyli 101 gastronomii","W tym kursie, pokażę wszystkie podstawy przyrządzania przeróżnych posiłków oraz podzielę się swoimi najlepszymi przepisami, jako szef pięcio-gwiazdkowej restauracji.", 1, 2, "95.00");
+
+
+INSERT INTO zakupy VALUES(NULL, 6, 1, "2020-09-06", "2021-03-14"), 
+(NULL, 3, 2, "2021-05-13", NULL), 
+(NULL, 5, 5, "2021-10-31", NULL), 
+(NULL, 2, 3, "2019-07-04", "2019-12-03"),
+(NULL, 1, 6, "2020-06-18", "2020-10-29"),  
+(NULL, 4, 4, "2021-11-10", NULL);

@@ -1,0 +1,131 @@
+Krzysztof Rozmus 2TP/24
+
+1)
+#include <iostream>
+using namespace std;
+
+int main() {
+    long double a;
+    
+    do {
+        cout << "Podaj wartość boku kwadratu (Dana wartość musi być dodatnia): " << flush;
+
+        cin >> a;
+        
+    } while(a < 0);
+
+    float pole = a * a;
+
+    cout << "Pole tego kwadratu to: " << pole << endl;
+
+    return 0;
+}
+
+2)
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    long double a;
+
+    do{
+        cout << "Podaj liczbę dodatnią: " << flush;
+
+        cin >> a;
+
+    } while(a < 0);
+
+    long double b = sqrt(a);
+
+    cout << "Pierwiastek z " << a << " to " << b << endl;
+
+    return 0;
+}
+
+3)
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float suma = 0;
+
+    float a;
+
+    do{
+        cout << "Podaj liczbę: " << flush;
+
+        cin >> a;
+
+        suma = suma + a;
+    }  while(!(a>0 && a<101));
+
+    cout << endl << "Podana liczba znajduje się we właściwym przedziale(1-100)" << endl << "Suma wszystkich podanych liczb to: " << suma << endl;
+
+    return 0;
+}
+
+4)
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    long double x;
+
+    do{
+        cout << "Podaj liczbę: " << flush;
+
+        cin >> x;
+    } while(!(x>0 && x<16));
+
+    cout << endl << "Liczba " << x << " znajduje się we właściwym przedziale(1-15)" << endl;
+
+    return 0;
+}
+
+5)
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    long double a;
+    
+    int x = 0;
+
+    do{
+        cout << "Podaj właściwy numer miesiąca(masz 3 próby): " << flush;
+        cin >> a;
+        x++;
+        if (x>=3){
+            cout << "Skończyły się twoje 3 próby" << endl;
+            return 0;
+        }
+        else{
+            continue;
+        }
+    } while(!(a>0 && a<13));
+    
+        cout << endl << "Podana przez ciebie numer miesiąca jest prawidłowy" << endl;
+    
+    return 0;
+}
+
+6)
+#include <iostream>
+using namespace std;
+
+int main()  {
+    char zn;
+    
+    do{
+        cout << "Podaj znak: " << flush;
+        cin >> zn;
+    } while (zn!='T' && zn!='t' && zn!='N' && zn!='n');
+    
+    cout << "Podana wartość jest równa 'T', 't' , 'N' lub 'n'" << endl;
+    
+    return 0;
+}

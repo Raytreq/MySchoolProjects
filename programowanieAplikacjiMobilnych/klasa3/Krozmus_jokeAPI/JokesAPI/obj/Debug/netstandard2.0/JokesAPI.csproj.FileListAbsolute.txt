@@ -1,0 +1,15 @@
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\bin\Debug\netstandard2.0\JokesAPI.deps.json
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\bin\Debug\netstandard2.0\JokesAPI.dll
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\bin\Debug\netstandard2.0\JokesAPI.pdb
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.csproj.AssemblyReference.cache
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.AssemblyInfoInputs.cache
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.AssemblyInfo.cs
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.csproj.CoreCompileInputs.cache
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.dll
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\refint\JokesAPI.dll
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\JokesAPI.pdb
+C:\Users\ZSEEiM\source\repos\JokesAPI\JokesAPI\obj\Debug\netstandard2.0\ref\JokesAPI.dll

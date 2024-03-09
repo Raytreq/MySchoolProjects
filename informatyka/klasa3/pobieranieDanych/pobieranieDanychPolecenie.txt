@@ -1,0 +1,5 @@
+Polecenie nauczyciela:
+Napisz skrypt w Python który:
+Zapyta użytkownika o ilość wprowadzanych osób do bazy danych.
+Następnie zapyta o Imię, Nazwisko, PESEL.
+Wprowadzone dane mają się znajdować w pliku o nazwie DANE.TXT

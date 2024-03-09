@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <meta name="author" content="Krzystof Rozmus">
+    <link rel="stylesheet" href="stylesheets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+        <h2>Pierwszy formularz</h2>
+        <form>
+            <fieldset>
+                <legend>Oblicz koszt swojego wesela:</legend>
+                <label>Podaj ilość gości: </label>
+                 <input type="number" id="goscie" />
+                </br>
+                <label> Poprawiny: </label>
+                <input type="checkbox" id="poprawiny"/>
+                <br>
+                <p id="cost"> </p>
+            </fieldset>
+        </form>
+        <script>
+            const gst = document.getElementById("goscie");
+            const chck = document.getElementById("poprawiny");
+            chck.addEventListener("change", e=> {
+                const val = gst.value;
+                if (chck.checked == true) {
+                    cost.innerText = "Wesele będzie kosztować: "+(val * 100) * 1.30 + " zł";
+                }else {
+                    cost.innerText = "";
+                    if (val > 0) cost.innerText = "Wesele będzie kosztować:  " + (val * 100)+ " zł";
+                }
+            });
+            gst.addEventListener("input", e => {
+                const val = gst.value;
+                if (chck.checked == false) {
+                    cost.innerText = "Wesele będzie kosztować "+(val*100)+" zł";
+                }
+            });
+        </script>
+    </section>
+
+    <section>
+        <h2>Drugi formularz</h2>
+        <form>
+            <input type="number" id="a"/>
+            <input type="number" id="b"/>
+            <button type="button" onclick="Calculator(this.innerHTML)">+</button>
+            <button type="button" onclick="Calculator(this.innerHTML)">-</button>
+            <button type="button" onclick="Calculator(this.innerHTML)">*</button>
+            <button type="button" onclick="Calculator(this.innerHTML)">/</button>
+            <button type="button" onclick="Calculator(this.innerHTML)">%</button>
+            <button type="button" onclick="Calculator(this.innerHTML)">//</button>
+            <br>
+            <p>Wynik:</p>
+            <input type="text" id="result" disabled="disabled" />
+        </form>
+        </form>
+        <script type="text/javascript">
+            function Calculator(operator) {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+                switch (operator) {
+                    case "+":
+                        var rslt = parseFloat(a) + parseFloat(b);
+                        if(a == "" || b == ""){
+                            rslt = "Nie podano obu zmiennych";
+                        }
+                        break;
+                    case "-":
+                        var rslt = parseFloat(a) - parseFloat(b);
+                        if(a == "" || b == ""){
+                            rslt = "Nie podano obu zmiennych";
+                        }
+                        break;
+                    case "*":
+                        var rslt = parseFloat(a) * parseFloat(b);
+                        if(a == "" || b == ""){
+                            rslt = "Nie podano obu zmiennych";
+                        }
+                        break;
+                    case "/":
+                        var rslt = parseFloat(a) / parseFloat(b);
+                        if(a == "" || b == ""){
+                            rslt = "Nie podano obu zmiennych";
+                        }
+                    break;
+                    case "%":
+                        var rslt = parseFloat(a) % parseFloat(b);
+                        if(a == "" || b == ""){
+                            rslt = "Nie podano obu zmiennych";
+                        }
+                        break;
+                    case "//":
+                        var rslt = parseInt(parseFloat(a) / parseFloat(b));
+                        if(a == "" || b == ""){
+                            rslt = "Nie podano obu zmiennych";
+                        }
+                        break;
+                }
+                document.getElementById('result').value = rslt;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>Trzeci formularz</h2>
+        <!-- Nie dokończyłem tego formularza, bo o ile właśnie miałem jakiś pomysł(to coś co tu napisałem, polegające na tym, że wartości z pól są przypisywane zmiennym dopiero po zaznaczeniu checkboxa), jednak właśnie trochę z tym poeksperymentowałem i się pobawiłem, ale nic nie wyszło i miałem z tym problem. Na ile wiem sam zamysł mojego wykonania jest raczej dobry, ale gdzieś popełniłem błąd i wynik nie jest w stanie się pokazać -->
+        <form>
+            <input type="text" id="pole1"><input type="checkbox" id="ck1">
+            <br>
+            <input type="text" id="pole2"><input type="checkbox" id="chk2">
+            <br>
+            <input type="text" id="pole3"><input type="checkbox" id="chk3">
+            <br>
+            <input type="text" id="pole4"><input type="checkbox" id="chk4">
+            <br>
+            <input type="text" id="pole5"><input type="checkbox" id="chk5">
+            <br>
+            <input type="button" value="Oblicz!" onclick="oblicz1()">
+            <br>
+            <p id="answer">Suma to: </p>
+        </form>
+        <script type="text/javascript">
+            function oblicz1(){
+                if (document.getElementById("chk1").checked) {
+                    var pol1 = document.getElementById("pole1").value;
+                }
+                else {
+                    var pol1 = 0;
+                }
+                if (document.getElementById("chk2").checked) {
+                    var pol2 = document.getElementById("pole2").value;
+                }
+                else {
+                    var pol2 = 0;
+                }
+                if (document.getElementById("chk3").checked) {
+                    var pol3 = document.getElementById("pole3").value;
+                }
+                else {
+                    var pol3 = 0;
+                }
+                if (document.getElementById("chk4").checked) {
+                    var pol4 = document.getElementById("pole4").value;
+                }
+                else {
+                    var pol4 = 0;
+                }
+                if (document.getElementById("chk5").checked) {
+                    var pol5 = document.getElementById("pole5").value;
+                }
+                else {
+                    var pol5 = 0;
+                }
+                document.getElementById("answer").innerText = "Suma to: "+pol1+pol2+pol3+pol4+pol5;
+                }
+        </script>
+    </section>
+
+    <section>
+        <h2>Czwarty formularz</h2>
+        <form>
+            <input type="number" id="licz"><br>
+            <label>Stały klient: </label>
+            <input type="checkbox" id="stl"><br>
+            <button type="button" onclick="oblicz2()">Oblicz!</button>
+            <p id="cst"></p>
+        </form>
+        <script type="text/javascript">
+            function oblicz2() {
+                var cst = 0;
+                var i = document.getElementById("licz").value;
+                cst = i
+                if (i <= 50) {
+                    cst = cst * 2;
+                }
+                else {
+                    if (i <= 100) {
+                        cst = cst * 1.5;
+                    }
+                }
+                if (document.getElementById("stl").checked) {
+                    cst = cst * 0.8;
+                }
+                document.getElementById("cst").innerText = "Koszt wynosi: " + cst + " zł";
+            }
+        </script>
+    </section>
+    
+</body>
+</html>

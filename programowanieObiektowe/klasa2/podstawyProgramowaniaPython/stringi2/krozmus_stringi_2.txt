@@ -1,0 +1,119 @@
+Krzysztof Rozmus 24/2TP
+
+12)
+zdanie = input("Podaj dowolne zdanie: ")
+alfabetycznie = []
+
+for i in range(0,len(zdanie)):
+    alfabetycznie.append(zdanie[i])
+
+print(alfabetycznie)
+alfabetycznie.sort()
+
+print("Oto litery z tego zdania w kolejności alfabetycznej: ", alfabetycznie)
+
+13)
+zdanie = input("Podaj dowolne zdanie do zaszyfrowania kodem cezara: ")
+
+print("'",zdanie,"' zaszyfrowane kodem cezara to: ")
+
+for i in zdanie:
+    szyfr = {ord(i):ord(i) + 3}
+    i = i.translate(szyfr)
+    print(i, end = "")
+
+14)
+ciag = input("Podaj dowolny ciąg znaków: ")
+
+for i in range(0,len(ciag)):
+    print("Aktualny znak",ciag[i],"posiada indeks",i)
+
+15)
+import string
+
+zdanie = input("Podaj dowolne zdanie: ")
+alfabet_string_lower = string.ascii_lowercase
+alfabet_list_lower = list(alfabet_string_lower)
+alfabet_string_upper = string.ascii_uppercase
+alfabet_list_upper = list(alfabet_string_upper)
+
+for i in zdanie:
+    if i in alfabet_list_lower:
+        alfabet_list_lower.remove(i)
+
+for i in zdanie:
+    if i in alfabet_list_upper:
+        alfabet_list_upper.remove(i)
+
+print("Małe litery alfabetu, których nie użyto w podanym zdaniu: \n",alfabet_list_lower,"\n Duże litery alfabetu, których nie użyłeś w swoim zdaniu: \n ", alfabet_list_upper)
+
+16)
+zdanie = input("Podaj dowolne zdanie: ")
+powtarz = []
+
+for i in zdanie:
+    powtarz.append(i)
+
+print("Litery niepowtarzające się w danym zdaniu to:")
+
+for i in powtarz:
+    if powtarz.count(i) == 1:
+        print(i)
+
+17)
+zdanie = input("Podaj dowolne zdanie: ")
+powtarz = {}
+
+print("Pierwszy powtarzający się znak to:")
+
+for i in zdanie:
+    if i in powtarz:
+        print(i)
+        break
+    else:
+        powtarz[i] = 1
+
+18)
+zdanie = input("Podaj dowolne zdanie: ")
+print("Podane zdanie bez spacji to:",zdanie.replace(" ",""))
+
+19)
+ciag = input("Podaj dowolny ciąg znaków: ")
+alfa = []
+
+for i in ciag:
+    alfa.append(i)
+
+alfa.sort()
+beta = "".join(alfa)
+
+print("Oto podany ciąg znaków, posiadający wszystkie 'a' na początku:", beta)
+
+20)
+zdanie = input("Podaj dowolne zdanie: ")
+for i in zdanie.split(" "):
+    print(i[0].upper() + i[1:-1] + i[-1].upper(), end=" ")
+
+21)
+zdanie = input("Podaj dowolne zdanie: ")
+print("Ilość wyrazów w podanym zdaniu wynosi:", len(zdanie.split(" ")))
+
+22)
+zdanie = input("Podaj dowolne zdanie: ")
+
+print("\n",zdanie.split(" "),"\n")
+
+najdluzsze = max(zdanie.split(" "), key=len)
+najkrotsze = min(zdanie.split(" "), key=len)
+
+print("Najdłuższe słowo z podanego zdania to:", najdluzsze)
+print("Najkrótsze słowo z podanego zdania to:", najkrotsze)
+
+23)
+x = input("Podaj słowo: ")
+n = x[::-1]
+print("Podane słowo od tyłu:",n)
+if(x==n):
+    print("Podane słowo(",x,") jest palindromem.")
+else:
+    print("Podane słowo(",x,") nie jest palindromem.")

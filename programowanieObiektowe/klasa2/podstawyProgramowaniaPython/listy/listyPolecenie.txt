@@ -1,0 +1,10 @@
+Polecenie nauczyciela:
+Do oddania zadania, które miały być na sprawdzianie:
+1. Napisz program, który usunie powtórzenia z listy:
+   moja_lista = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+2. Napisz program, który wylosuje 5 liczb z zakresu <1,50> do listy1, a następnie do listy2
+   pobierze 5 wartości od użytkownika i sprawdzi ile liczb z listy1 trafił użytkownik.
+   
+3. Napisz program, który sprawdzi czy wartość podana przez użytkownika jest na liście i pod jakim indeksem.
+   lista = [1,2,3,4,5,6,7,8,9,10]

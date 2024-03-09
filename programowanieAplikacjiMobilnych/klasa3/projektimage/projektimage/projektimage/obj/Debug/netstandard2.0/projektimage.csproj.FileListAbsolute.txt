@@ -1,0 +1,15 @@
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\bin\Debug\netstandard2.0\projektimage.deps.json
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\bin\Debug\netstandard2.0\projektimage.dll
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\bin\Debug\netstandard2.0\projektimage.pdb
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.csproj.AssemblyReference.cache
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.AssemblyInfoInputs.cache
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.AssemblyInfo.cs
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.dll
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\refint\projektimage.dll
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\projektimage.pdb
+C:\Users\Krzysiek\source\repos\projektimage\projektimage\projektimage\obj\Debug\netstandard2.0\ref\projektimage.dll

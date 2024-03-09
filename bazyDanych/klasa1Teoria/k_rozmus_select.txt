@@ -1,0 +1,39 @@
+Krzysztof Rozmus 1TP
+1)
+SELECT * FROM ksiazki;
+
+2)
+SELECT concat(tytul," zosta³a napisana przez autora: ",nazwisko ,imie) as "Dane ksi¹¿ek i autorów" FROM ksiazki;
+
+3)
+SELECT upper(imie), upper(nazwisko) FROM pracownicy;
+
+4)
+SELECT concat(left(imie,1),".", left(nazwisko,1),".", tytul) as "Ksi¹¿ki" FROM ksiazki;
+
+5)
+SELECT concat(nazwisko," ",imie) as "Osoba", concat(day(Data_zatrudnienia)," ",monthname(Data_zatrudnienia)," ",year(Data_zatrudnienia)) as "Data zatrudnienia" FROM pracownicy;
+
+6)
+SELECT lower(reverse(imie)), lower(reverse(nazwisko)) FROM pracownicy;
+
+7)
+SELECT nazwa, length(nazwa) as "d³ugoœæ" FROM dzialy;
+
+8a)
+SELECT floor(33-2.45) as "Wynik";
+
+8b)
+SELECT CEIL(123.23+34.4*3) as "Wynik";
+
+9)
+SELECT 2+sqrt(abs(3.75-33)*pow(2,3))/(44/11-12.5) as "Wynik";
+
+10)
+SELECT Nr_transakcji, datediff(data_zwrotu,data_wypozyczenia) as "Liczba dni wypo¿yczenia" FROM wypozyczenia;
+
+11)
+SELECT concat(upper(substring(Nazwa,1,1)) , substring(Nazwa,2,4) , substring((upper(Nazwa)),6,1) , substring(Nazwa,7) , substring((upper(Nazwa)),-1,1)) as "Æwiczenie 11" FROM stanowiska;
+
+Jedynaste sprawi³o mi doœæ du¿o problem, jednak nie potrafi³em go do koñca dobrze zrobiæ.
+

@@ -1,0 +1,15 @@
+Polecenie nauczyciela:
+Program ma wylosować 100 licz z zakresu od <0;n> gdzie n jest liczbą całkowitą z przedziału <100;200> ale podzielną przez 10 - te liczby ma zapisać w typie tablicowym.
+
+1. Wyświetl statystykę wylosowanych liczb czyli tzn.
+liczba 0 - 2
+liczba 1 - 0
+...
+liczba n - 1
+
+2. Wyświetl liczbę lub liczby które występują najczęciej tzn.
+liczba 10 - 5 razy
+lub
+liczby 11,37 - 4 razy
+
+3. Wyświetl ile razy wystąpiły liczby parzysty oraz nieparzyte

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pitagoras_krozmus.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+        <Label Text="Podaj długość pierwszej przyprostokątnej: " TextColor="DarkOrange"/>
+        <Entry x:Name="entA" Placeholder="Wartość zmiennej a" />
+        
+        <Label Text="Podaj długość drugiej przyprostokątnej:" TextColor="DarkOrange"/>
+        <Entry x:Name="entB" Placeholder="Wartość zmiennej b"/>
+        
+        <Label Text="Podaj wartość przeciwprostokątnej" TextColor="DarkOrange"/>
+        <Entry x:Name="entC" Placeholder="Wartość zmiennej c"/>
+        
+        <Label Text="Podaj wysokosć:" TextColor="DarkOrange"/>
+        <Entry x:Name="entH" Placeholder="Wartość zmiennej h"/>
+        
+        <Button x:Name="przyciskObl" Clicked="przyciskOblPressed" BackgroundColor="DarkOrange" Text="Oblicz"/>
+
+        <Label x:Name="Space" Text=""/>
+        <Label x:Name="Wynik" TextColor="OrangeRed" Text=""/>
+        <Label x:Name="Obwod" TextColor="OrangeRed" Text=""/>
+        <Label x:Name="Pole" TextColor="OrangeRed" Text=""/>
+    </StackLayout>
+
+</ContentPage>

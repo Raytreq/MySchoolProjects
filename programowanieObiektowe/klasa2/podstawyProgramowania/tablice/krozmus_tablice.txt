@@ -1,0 +1,114 @@
+Krzysztof Rozmus 24/2TP
+
+1)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 0;
+    int liczby[19];
+    
+    cout<<"Podaj 20 liczb całkowitych: "<<flush;
+    for(int i = 0;i < 20;i++) {
+        cin>>x;
+        liczby[i] = x;
+    };
+    cout<<"Podałeś: "<<endl;
+    for(int i = 0;i < 20;i++) {
+        cout<<liczby[i]<<" "<<flush;
+    };
+
+    return 0;
+};
+
+2)
+#include <iostream>
+using namespace std;
+
+int main() {
+    float liczby[19];
+    float x;
+    
+    cout<<"Podaj 20 liczb całkowitych: "<<flush;
+    
+    for(int i = 0;i < 20;i++){
+        cin>>x;
+        liczby[i] = x;
+    };
+    cout<<"Podałeś: "<<endl;
+    for(int i = 19;i > 0;i--){
+        cout<<liczby[i]<<" "<<flush;
+    };
+    
+    return 0;
+};
+
+3)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int x;
+    int liczba[29];
+    
+    cout<<"Podaj ilość liczb w zakresie od 1 do 30: "<<flush;
+    cin>>n;
+    
+    if (n>=1 && n<=30) {
+        cout<<"Podaj własne liczby całkowite: "<<flush;
+        for(int i = 0;i < n;i++){
+            cin>>x;
+            liczba[i] = x;
+        };
+        cout<<"Podałeś: "<<endl;
+        for(int i = 0;i < n;i++){
+            cout<<liczba[i]<<" "<<flush;
+        };
+    }
+    else {
+    cout<<"Podana liczba nie znajduje się we właściwym przedziale";
+    };
+    
+    return 0;
+};	
+
+4)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    int n;
+    int ilosc = 0;
+    int najwieksza = 0;
+    cout<<"Podaj ilość liczb które podasz: "<<endl;
+    cin>>n;
+    int liczby[n];
+
+    cout<<"Podaj liczby całkowite: "<<flush;
+    for(int i = 0;i < n;i++){
+        cin>>x;
+        liczby[i] = x;
+    }
+    cout<<"Podałeś: "<<endl;
+    for(int i = 0;i < n;i++){
+        cout<<liczby[i]<<" "<<flush;
+    }
+
+    for(int i=0; i<n; i++){
+        if (najwieksza < liczby[i]) {
+            najwieksza = liczby[i];
+        }
+    }
+
+    for(int i=0; i<n; i++){
+        if (liczby[i] == najwieksza){
+            ilosc+=1;
+        }
+    }
+
+    cout<<endl<<"Największa podana liczba to "<<najwieksza<<", która wystąpiła "<<ilosc<<" razy"<<endl;
+
+    return 0;
+};

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI.Android", "JokesAPI.Android\JokesAPI.Android.csproj", "{47C47515-E8C4-4B57-8663-19A428CE6D42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesAPI", "JokesAPI\JokesAPI.csproj", "{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47C47515-E8C4-4B57-8663-19A428CE6D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C47515-E8C4-4B57-8663-19A428CE6D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C47515-E8C4-4B57-8663-19A428CE6D42}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{47C47515-E8C4-4B57-8663-19A428CE6D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C47515-E8C4-4B57-8663-19A428CE6D42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C47515-E8C4-4B57-8663-19A428CE6D42}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE5122CF-5B2A-4B61-81D8-5C2A48ACA294}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B49FA61E-7A57-4F76-A5DA-C5135D96BEE8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+Polecenie nauczyciela:
+1. Napisz program, który wypisze długość ciągu znaków podanego przez użytkownika.
+2. Napisz program, który obliczy ilość wystąpień każdego znaku w ciągu znaków podanym przez użytkownika.
+Następnie wypisze je bez powtórzeń na ekran.
+3. Napisz program, który z ciągu znaków podanego przez użytkownika wypisze 2 pierwsze i 2 ostatnie znaki.
+Jeśli ciąg jest krótszy niż 2 znaki, wypisze na ekran pusty ciąg.
+4. Napisz program, który zamieni w ciągu znaków podanym przez użytkownika każdy znak, który się powtórzy na @.
+Zmieniony ciąg znaków wypisze na ekran. Np. dla ciągu technikinformatyk wynikiem będzie technik@@forma@y@.
+5. Napisz program, który wczyta od użytkownika jego imię i nazwisko. Wypisz na ekran te dane,
+jednak zamień ze sobą miejscami 2 pierwsze litery imienia z dwoma pierwszymi literami nazwiska.
+6. Napisz program, który wczyta od użytkownika zdanie. Wszystkie tak zamień na nie i odwrotnie.
+7. Napisz program, który wczyta od użytkownika zdanie. Wypisz najdłuższe słowo i jego długość.
+8. Napisz program, który wczyta od użytkownika zdanie. Wypisz z niego co 3 znak.
+9. Napisz program, który wczyta od użytkownika zdanie. Usuń z niego wszystkie znaki o nieparzystych indeksach.
+To co pozostało wypisz na ekran.
+10. Napisz program, który wczyta od użytkownika zdanie. Wypisz je od końca wielkimi literami.
+11. Napisz program, który wczyta od użytkownika zdanie. Wypisz to zdanie na ekran uwzględniając,
+że każdy jego wyraz, którego ilość znaków jest podzielna przez 3, zostaje wypisany od końca.

@@ -1,0 +1,99 @@
+Krzysztof Rozmus 24/2TP
+
+1)
+x = input("Podaj ciąg znaków: ")
+print("Oto długość danego ciągu znaków: ",len(x))
+
+2)
+podany_strng = []
+strng = input("Podaj ciąg znaków: ")
+ilosci = []
+uzyte = []
+
+for i in range(0,len(strng)):
+    podany_strng.append(strng[i])
+
+for i in range(0,len(podany_strng)):
+    ilosci.append(podany_strng.count(podany_strng[i])) 
+
+for i in range(0,len(podany_strng)):
+    if podany_strng[i] in uzyte:
+        continue
+    uzyte.append(podany_strng[i])
+    print("'",podany_strng[i],"' wystąpiło:",ilosci[i],"razy.\n")
+
+uzyte.clear()
+
+for i in range(0,len(podany_strng)):
+    if podany_strng[i] in uzyte:
+        continue
+    print(podany_strng[i], end="")
+    uzyte.append(podany_strng[i])
+
+3)
+x = input("Podaj ciąg znaków: ")
+print(x[2:-2])
+
+4)
+x = input("Podaj dowolny ciąg znaków: ")
+print(x[0],end="")
+for i in range(1,len(x)):
+	if x[i] not in x[0:(i-1)]:
+		print(x[i],end="")
+ 	else:
+ 		print("@",end="")
+
+
+5)
+x = input("Podaj dowolne imie: ")
+y = input("Podaj dowolne nazwisko: ")
+print("Imię: ",y[0:2],x[2:]," ","Nazwisko: ",x[0:2],y[2:])
+
+6)
+x = input("Podaj dowolne zdanie ")
+y = x.replace('tak', 'i').replace('nie','tak').replace('i', 'nie')
+print(y)
+
+7)
+x = input("Podaj dowolny ciąg znaków: ")
+y = max(x.split(),key=len)
+
+print(y, len(y))
+
+8)
+z = input("Podaj ciąg znaków: ")
+b = len(z)
+
+for i in range (0, b, 3):
+ o = z[i]
+
+print(o)
+
+9)
+x = input("Podaj ciąg znaków:  ")
+z = ""
+
+for i in range(1, len(b) + 1):
+    if(i % 2 == 0):
+        z = z + x[i - 1]
+print("Wynik: ", z)
+
+10)
+z = input("Podaj cigą znaków: ")
+x = z[::-1]
+
+print(x.upper())
+
+11)
+string = input("Podaj dowolne zdanie: ")
+slowa = []
+
+for i in range(0,len(string.split())):
+    slowa.append(string.split()[i])
+
+print("To samo zdanie, jednak z odwróconymi wyrazami, których liczba znaków jest podzielna przez 3: ")
+for i in range(0,len(slowa)):
+    if len(slowa[i]) % 3 == 0:
+        print(slowa[i][::-1], end=" ")
+        continue
+    print(slowa[i], end=" ")

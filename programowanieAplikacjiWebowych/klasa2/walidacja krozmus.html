@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walidacja - K.Rozmus</title>
+    <meta name="author" content="Krzysztof Rozmus">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        form {
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -30%);
+            background-color: #3e7be6;
+            padding: 36px;
+            border: 6px solid #111214;
+        }
+
+        label, p, span{
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            font-size: 26;
+        }
+
+        input, select, textarea{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .sub{
+            background-color: #111214;
+            color: aliceblue;
+            padding: 10px 18px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--form action="przykladowa_baza_danych.php//-->
+    <form onsubmit = "walidacja()" name="formu">
+        <label for="spec">Specjalista: </label>
+        <select id="specjalista" name="specjalista">
+            <option value=""></option>
+            <option value="ortopeda">Ortopeda</option>
+            <option value="kardiolog">Kardiolog</option>
+            <option value="neurolog">Neurolog</option>
+            <option value="dermatolog">Dermatolog</option>
+          </select>
+        <span style="white-space: nowrap;">*</span>
+        <p>Czy to Twoja pierwsza wizyta u specjalisty?</p>
+        <input type="radio" id="tak" name="wizyta">
+        <label for="tak">Tak</label>
+        <input type="radio" id="nie" name="wizyta">
+        <label for="nie">Nie</label><br><br>
+        <!-- Walidacja za pomocą HTML \/\/\/ -->
+        <label for="imie">Imię(min 3 znaki): *</label><br>
+        <input type="text" id="imie" name="imie" pattern=".{3,}" required><br>
+        <label for="naz">Nazwisko(max 36 znaków): *</label><br>
+        <input type="text" id="naz" name="naz" pattern=".{,36}" required><br>
+        <label for="num">Numer: *</label><br>
+        <input type="tel" id="num" name="num"><br>
+        <label for="mail">Adres e-mail:</label><br>
+        <input type="email" id="mail" name="email"><br><br>
+        <label for="message">Wiadomość: *</label><br>
+        <textarea rows="7" cols="60" id="message" name="message"></textarea><br><br>
+        <label for="consent">Zapoznałem się z regulaminem:</label>
+        <input type="checkbox" id="consent" name="consent">
+        <span style="white-space: nowrap;">*</span> <br>
+        <label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych:</label>
+        <input type="checkbox" id="zgoda" name="zgoda"><br><br>
+        <input type="submit" value="Wyślij" class="sub">
+      </form>
+      <script type="text/javascript">
+        function walidacja() {
+            var opcja = document.getElementById("specjalista");
+
+            if (specjalista.value == "") {
+            alert("Proszę wybrać specjalistę");
+            return false;
+            }
+        
+           if(document.formu.num.value =="" || document.formu.num.value.length != 9 ) {
+              alert( "Proszę podać numer telefonu składający się z 9 cyfr");
+              document.formu.num.value.focus() ;
+              return false;
+           }
+
+           if(document.formu.message.value == "") {
+              alert( "Proszę wypełnić pole wiadomość" );
+              return false;
+           }
+
+            if(!document.getElementById("consent").checked) {
+                alert( "Proszę zapoznać się z regulaminem i po tym zaznaczyć kwadracik" );
+                return false;
+            }
+
+            return(true);
+        }
+      </script> 
+</body>
+</html>

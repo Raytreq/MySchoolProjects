@@ -1,0 +1,9 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section:first-of-type p,
+section:nth-child(3) p {
+    font-weight: bold;
+    display: inline;
+}

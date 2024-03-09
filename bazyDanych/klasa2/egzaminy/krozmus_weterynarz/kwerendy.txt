@@ -1,0 +1,17 @@
+Krzysztof Rozmus 2TP/24
+
+1)
+SELECT imie, telefon, szczepienie, opis FROM zwierzeta;
+
+2)
+SELECT id, imie, wlasciciel FROM zwierzeta WHERE rodzaj="1";
+
+3)
+SELECT imie, nazwa FROM zwierzeta INNER JOIN uslugi ON zwierzeta.usluga_id = uslugi.id;
+
+4)
+SELECT AVG(cena) as "Średnia cena" FROM uslugi;
+
+*ALTER TABLE zwierzeta
+ADD FOREIGN KEY (usluga_id) REFERENCES uslugi(id);
+ - polecenie do utworzenia relacji, ponieważ, przynajmniej mi, klucz obcy się nie wczytał(jest szansa jednak, że stworzenie klucza obcego w ogóle nie zadziała, bo w tym wypadku nie można zrobić go do już przypisanych wartości w kolumnie usluga_id)

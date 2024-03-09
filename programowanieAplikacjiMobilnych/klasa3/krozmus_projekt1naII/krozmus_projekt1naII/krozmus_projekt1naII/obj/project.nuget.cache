@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "i9cfH+KnOp3HfBfwlRMp/hzJXBWLyF2yo/yHymR52FhQj0+y4SwIbhyM9UsDND8aTCGfu8bSyRuNbN1p/S/zcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Krzysiek\\source\\repos\\krozmus_projekt1naII\\krozmus_projekt1naII\\krozmus_projekt1naII\\krozmus_projekt1naII.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Krzysiek\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

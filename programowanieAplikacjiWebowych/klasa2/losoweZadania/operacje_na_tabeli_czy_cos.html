@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=" X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablice</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    tablica = [];
+    ilo = 0
+    k = 0 
+    r = 0
+    p = 0
+    m = 0
+    n = 0
+    o = 0
+
+    while (true) {
+        i = Number(prompt("Podaj wartość do tabeli/Wprowadzenie 0 kończy operację"));
+        if (i==0) {
+            break;
+        }
+        else{
+            tablica.push(i)
+            ilo=ilo+1
+        }
+    }
+
+    for(k = 0; k < tablica.length; k++){
+        r = tablica[k]
+        p = p + r
+    }
+
+    for(m = 0; m < tablica.length; m++) {
+        n = tablica[m]
+        if (n==3) {
+        o=o+1
+        }
+    }
+
+    document.write(Math.min(...tablica),"<br>");
+    document.write(Math.max(...tablica),"<br>");
+    document.write("Średnia to: ", p/ilo, "<br>")
+    document.write("Liczba 3 występuje ", o, " razy.")
+
+    </script>
+</body>
+</html>

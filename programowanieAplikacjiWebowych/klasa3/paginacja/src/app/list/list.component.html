@@ -1,0 +1,6 @@
+<h2>Lista aut:</h2>
+<input type="search" [(ngModel)]="searchText" placeholder="Wyszukaj...">
+<p *ngFor="let itemName of itemsNames | filterList: searchText | paginate: { itemsPerPage: 10, currentPage: page } "><button type = "button" (click)="showDetails(itemName)">{{ itemName }}</button></p>
+<app-details [item]="selectedItem"></app-details>
+<pagination-controls (pageChange)="page = $event"></pagination-controls>
+

@@ -1,0 +1,15 @@
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\bin\Debug\netstandard2.0\pitagoras_krozmus.deps.json
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\bin\Debug\netstandard2.0\pitagoras_krozmus.dll
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\bin\Debug\netstandard2.0\pitagoras_krozmus.pdb
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.csproj.AssemblyReference.cache
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.AssemblyInfoInputs.cache
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.AssemblyInfo.cs
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.csproj.CoreCompileInputs.cache
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.dll
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\refint\pitagoras_krozmus.dll
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\pitagoras_krozmus.pdb
+C:\Users\rejtr\source\repos\pitagoras_krozmus\pitagoras_krozmus\pitagoras_krozmus\obj\Debug\netstandard2.0\ref\pitagoras_krozmus.dll

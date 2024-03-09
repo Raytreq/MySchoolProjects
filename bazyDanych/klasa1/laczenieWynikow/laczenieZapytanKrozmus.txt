@@ -1,0 +1,9 @@
+Krzysztof Rozmus 1TP
+
+Zadanie 1 - Na podstawie tabeli OCENY oraz tabeli UCZNIOWIE wyœwietl alfabetyczn¹ listê uczniów, którzy uzyskali ocenê 2. (U¿yj odpowiedniego z³¹czenia) :
+
+SELECT imie, nazwisko, OCENY_ID FROM uczniowie LEFT OUTER JOIN oceny ON uczniowie.OCENY_ID=oceny.ID_OCENY WHERE OCENY_ID="2" ORDER BY imie ASC;
+
+Zadanie 2 - Utwórz wykorzystuj¹c odpowiednie polecenie listê wszystkich nauczycieli i uczniów w szkole:
+
+SELECT id, imie, nazwisko FROM uczniowie UNION SELECT id_nauczyciel, imie, nazwisko FROM nauczyciele;

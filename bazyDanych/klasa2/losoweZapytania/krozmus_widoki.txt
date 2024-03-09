@@ -1,0 +1,18 @@
+Krzysztof Rozmus 24/2TP
+
+1)
+CREATE VIEW czytelnicy_raport AS SELECT nr_czytelnika, imie, nazwisko, sygnatura FROM wypozyczenia LEFT OUTER JOIN czytelnicy USING(Nr_czytelnika) LEFT OUTER JOIN ksiazki USING(Sygnatura) GROUP BY sygnatura HAVING COUNT(Data_wypozyczenia) >= 2;
+
+
+2)
+CREATE VIEW ksiazki_raport AS SELECT sygnatura, tytul, id_dzial, COUNT(Data_wypozyczenia) AS ilosc_wypozyczonych FROM wypozyczenia LEFT OUTER JOIN ksiazki USING(Sygnatura) LEFT OUTER JOIN dzialy USING(id_dzial);
+
+SELECT tytul, sygnatura, ilosc_wypozyczonych FROM ksiazki_raport WHERE ilosc_wypozyczonych = (SELECT MAX(ilosc_wypozyczonych) FROM ksiazki_raport);
+
+SELECT  COUNT(ilosc_wypozyczonych),id_dzial FROM ksiazki_raport GROUP BY id_dzial;
+
+
+3)
+CREATE VIEW pracownik_raport AS SELECT id_pracownika, imie, nazwisko, COUNT(data_wypozyczenia) AS ilosc_wypozyczonych FROM pracownicy LEFT OUTER JOIN wypozyczenia USING(id_pracownika);
+
+SELECT id_pracownika, imie, nazwisko, ilosc_wypozyczonych FROM pracownik_raport WHERE ilosc_wypozyczonych > (SELECT AVG(ilosc_wypozyczonych) FROM pracownik_raport)  GROUP BY id_pracownika;

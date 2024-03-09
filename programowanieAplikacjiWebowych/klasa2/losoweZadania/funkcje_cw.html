@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje</title>
+<style>
+.box {
+  width: 200px;
+  height: 200px;
+  font-size: 22px;
+}
+</style>
+</head>
+<body>
+<div class="box" id="kontener">
+    Krzysztof Rozmus
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const element = document.querySelector('#kontener');
+        element.onclick = function(){
+            let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById("kontener").style.background = "#"+randomColor;
+        } 
+        element.onmouseover = function(){
+            document.getElementById("kontener").style.fontSize = "44px";
+        }  
+        element.onmouseout = function(){
+            document.getElementById("kontener").style.fontSize = "22px";
+        }  
+    });
+</script>
+</body>
+</html>

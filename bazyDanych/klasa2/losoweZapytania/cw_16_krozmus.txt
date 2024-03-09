@@ -1,0 +1,101 @@
+Krzysztof Rozmus 2TP/24
+
+Przykładowe zadania z całości dokumentacji:
+1)
+ALTER TABLE pracownicy DROP FOREIGN KEY FK_STANOW_PRACOW; - usunięcie klucza obcego, inaczej nie będziemy w stanie wykonać następnego zadania
+INSERT INTO pracownicy VALUES (default,"Nowicki", "Robert", 6, "Koszalin", "2014-01-01", 1600);
+
+2)
+SELECT * FROM pracownicy INNER JOIN stanowiska USING(Id_stanowisko); - zapytanie, które nam zwraca jedynie wartości pola id_stanowiska mające swoje odpowiedniki w tabeli stanowiska
+SELECT * FROM pracownicy LEFT OUTER JOIN stanowiska USING(Id_stanowisko); - zapytanie, które zwraca nam jeden dodatkowy wiersz dla którego nie ma odpowiadającej mu wartości w tabeli stanowiska
+
+3)
+INSERT INTO stanowiska VALUES(7, "Informatyk");
+SELECT imie, nazwisko, nazwa FROM pracownicy RIGHT OUTER JOIN stanowiska USING(id_stanowisko);
+
+
+Zadania z końca dokumentacji:
+1)
+SELECT nr_czytelnika, imie, nazwisko, nr_legitymacji, COUNT(data_wypozyczenia) as "ilość wypożyczeń"
+FROM czytelnicy 
+LEFT OUTER JOIN wypozyczenia USING(nr_czytelnika)
+GROUP BY nr_czytelnika;
+
+2)
+SELECT sygnatura, wydawnictwo, tytul, COUNT(*) as "ilość wypożyczeń"
+FROM ksiazki INNER JOIN wypozyczenia USING(sygnatura) 
+GROUP BY sygnatura;
+
+3)
+SELECT nr_czytelnika, imie, nazwisko, nr_legitymacji
+FROM czytelnicy INNER JOIN wypozyczenia USING(nr_czytelnika)
+WHERE data_wypozyczenia IS NULL
+GROUP BY nr_czytelnika;
+
+4)
+SELECT Sygnatura, Tytul, COUNT(Nr_transakcji) as "Ilość wypożyczeń"
+FROM ksiazki INNER JOIN wypozyczenia USING(Sygnatura)
+GROUP BY Sygnatura 
+HAVING COUNT(Nr_transakcji) >= 5;
+
+5)
+SELECT Id_dzial, Nazwa, COUNT(Sygnatura) as "Liczba książek"
+FROM dzialy INNER JOIN ksiazki USING(Id_dzial)
+WHERE Id_dzial="1" OR Id_dzial="7"
+GROUP BY Nazwa;
+
+6)
+SELECT nazwa, COUNT(miasto) as "Pracownicy Lublina" 
+FROM stanowiska INNER JOIN pracownicy USING(id_stanowisko) 
+WHERE miasto="Lublin" AND wynagrodzenie>2000;
+
+7)
+SELECT nazwa, count(Data_wypozyczenia) 
+FROM pracownicy INNER JOIN stanowiska USING(id_stanowisko) 
+LEFT OUTER JOIN wypozyczenia USING(Id_pracownika) GROUP BY nazwa;
+
+8)
+SELECT tytul, Nr_czytelnika, id_pracownika 
+FROM wypozyczenia INNER JOIN ksiazki using (sygnatura) 
+INNER JOIN czytelnicy using(Nr_czytelnika) 
+INNER JOIN pracownicy using (id_pracownika) 
+WHERE Nr_czytelnika="11"
+HAVING id_pracownika ="6" or id_pracownika="7";
+
+9)
+SELECT Nr_czytelnika, imie, nazwisko 
+FROM czytelnicy RIGHT OUTER JOIN wypozyczenia using(Nr_czytelnika)
+WHERE Data_zwrotu IS NULL 
+ORDER BY nazwisko;
+
+10)
+SELECT tytul 
+FROM wypozyczenia RIGHT OUTER JOIN ksiazki USING(sygnatura)
+WHERE data_wypozyczenia IS NULL;
+
+11)
+SELECT count(Nr_czytelnika) as "Liczba czytelników"
+FROM czytelnicy 
+HAVING nazwisko LIKE "S%" or "M%";
+
+12)
+SELECT concat(Id_pracownika," ", imie," ", nazwisko) AS "Dane pracownika"
+FROM wypozyczenia RIGHT OUTER JOIN pracownicy USING(Id_pracownika)
+WHERE data_wypozyczenia IS NULL;
+
+13)
+SELECT COUNT(tytul) as "Ilość książek" 
+FROM wypozyczenia RIGHT OUTER JOIN ksiazki USING(sygnatura) 
+WHERE data_wypozyczenia IS NULL;
+
+14)
+SELECT nazwisko, data_wypozyczenia 
+FROM wypozyczenia INNER JOIN czytelnicy USING(Nr_czytelnika) 
+WHERE data_wypozyczenia BETWEEN "2018-05-11" AND "2020-03-08" 
+ORDER BY data_wypozyczenia DESC LIMIT 5;
+(Polecenie jest napisane poprawnie, nic nie wyskakuje kiedy je wpiszemy, bo w naszej bazie danych nie istnieją żadne rekordy o danej dacie)
+
+15)
+SELECT Nr_czytelnika , imie, nazwisko
+FROM wypozyczenia RIGHT OUTER JOIN czytelnicy USING(Nr_czytelnika) 
+WHERE data_wypozyczenia IS NULL;

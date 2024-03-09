@@ -1,0 +1,17 @@
+Krzysztof Rozmus 2TP/24
+
+1)
+SELECT imie,nazwisko FROM pracownicy p 
+UNION ALL
+SELECT imie,nazwisko FROM czytelnicy;
+
+2)
+SELECT p.imie,p.nazwisko
+FROM pracownicy p INNER JOIN czytelnicy c
+ON p.nazwisko = c.nazwisko;
+
+3)
+SELECT c.imie,c.nazwisko 
+FROM czytelnicy c LEFT OUTER JOIN pracownicy p 
+ON c.nazwisko = p.nazwisko 
+WHERE p.nazwisko IS NULL;

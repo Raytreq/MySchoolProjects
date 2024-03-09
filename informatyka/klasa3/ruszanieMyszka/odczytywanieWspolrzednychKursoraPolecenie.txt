@@ -1,0 +1,15 @@
+Polecenie nauczyciela:
+Na podstawie załącznika w PDF przetestuj działanie poniższego kodu oraz napisz komentarze wyjaśniające jego działanie. Popraw także błędy tabulacji.
+
+import pyautogui
+print('Naciśnij klawisze Ctrl+C, aby zakończyć działanie programu.')
+try:
+while True:
+
+x, y = pyautogui.position()
+positionStr = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
+print(positionStr, end='')
+print('\b' * len(positionStr), end='', flush=True)
+
+except KeyboardInterrupt:
+print('\nGotowe!')

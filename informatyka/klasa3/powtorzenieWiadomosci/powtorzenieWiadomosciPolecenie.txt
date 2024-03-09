@@ -1,0 +1,2 @@
+Polecenie nauczyciela:
+Zadanie jest następujące: przygotuj prosty kod, który będzie w stanie wskazać czas zakończenia dla jakiegoś przedziału czasu, podanego jako liczba minut (może być dowolnie duża). Czas rozpoczęcia podawany jest jako para godzin (0..23) i minut (0..59). Wynik musi zostać wyświetlony na konsoli. Na przykład, jeśli wydarzenie zaczyna się o 12:17 i trwa 59 minut, to skończy się o 13:16.

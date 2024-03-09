@@ -1,0 +1,73 @@
+Pierwsze Zadanie:
+LOAD DATA INFILE "C:/Users/Krzychu/Documents/dzialki.txt" INTO TABLE dzialki
+fields terminated by ";"
+lines terminated by "\n"
+ignore 1 lines (numer,powierzchnia,rodzaj,ulga);
+
+Drugie zadanie:
+1. SHOW TABLES FROM biblioteka;
+
+2.
+Czytelnicy:
+INSERT INTO czytelnicy VALUES (null, "Nowak", "Jan" , "1973-10-10","Agrestowa", "21500","Biala Podlaska","2002-01-13","2005-03-01","1272","S","M"),
+			      (null, "Kowalski", "Adam" , "1998-12-30","Szkolna", "21500","Biala Podlaska","2013-03-15",null,"1273","S","M"),
+			      (null, "Kowalczyk", "Agata" , "1980-06-04","Malinowa", "21500","Biala Podlaska","1999-12-06",null,"1274","S","K"),
+			      (null, "Stec", "Arkadiusz" , "1956-08-23","Partyzantow", "21500","Biala Podlaska","2006-10-19",null,"1275","PD","M"),
+			      (null, "Janica", "Marek" , "1988-02-21","Arbuzowa", "21500","Biala Podlaska","2007-06-05",null,"1276","S","K");
+Dzia³y:
+INSERT INTO dzialy VALUES (null, "Kryminalne"),
+			  (null, "Science Fiction"),
+			  (null, "Jezyki Obce"),
+			  (null, "Muzyka"),
+			  (null, "Lektury Szkolne");
+Ksi¹¿ki:
+INSERT INTO ksiazki VALUES (null, "Basniobor", "Mull", "Brandon", "WAB", "Nowy Jork", 2006, 433, 28.50, 3),
+			   (null, "Przygody Sherlocka Holmesa", "Doyle", "Arthur", "Time", "Londyn", 1892, 896, 49.00, 10),
+			   (null, "Wszystko o górach", "Tarnawa", "Andrzej", "WORLD", "Gdansk", 2012, 527, 35.80, 9),
+			   (null, "Nauka teorii muzyki", "Peterson", "Maciej", "WAB", "Oswiecim", 1996, 638, 23.00, 13),
+			   (null, "Przewodnik po Bitwie pod Grunwaldem", "Janik", "Mateusz", "Jaguar", "Warszawa", 2015, 750, 40.00, 4);
+Pracownicy:
+INSERT INTO pracownicy VALUES (null, "Adamczyk", "Julia", 1,"Biala Podlaska", "2005-10-10", 1900),
+ 			      (null, "Skraba", "Mikolaj", 3,"Lublin", "2003-04-06", 1500),
+ 			      (null, "Wojcieszyk", "Pawel", 4,"Warszawa", "1998-09-02", 2100),
+			      (null, "Duraj", "Weronika", 2,"Lublin", "2001-12-11", 1300),
+			      (null, "Cembala", "Patrycja", 3,"Warszawa", "2008-11-04", 2200);
+
+
+Stanowiska:
+INSERT INTO stanowiska values (null, "Sprzatajacy"),
+			      (null, "Straznik"),
+  			      (null, "Portier"),
+ 			      (null, "Obsluga klienta"),
+ 			      (null, "Kustosz");
+                       
+Wypo¿yczenia:
+INSERT INTO WYPOZYCZENIA VALUES (null, 11, 8, 2, '2009-12-05', '2010-02-26'),
+ 				(null, 12, 7, 9, '2009-02-24', '2009-15-02'),
+ 				(null, 9, 20, 5, '2009-06-09', '2009-09-04'),
+				(null, 29, 3, 11, '2009-01-20', '2010-01-28'),
+				(null, 3, 16, 4, '2009-02-17', '2009-04-05');
+
+3.
+SELECT * FROM czytelnicy;
+SELECT * FROM dzialy;
+SELECT * FROM ksiazki;
+SELECT * FROM pracownicy;
+SELECT * FROM stanowiska;
+SELECT * FROM wypozyczenia;
+
+4.
+DELETE FROM pracownicy
+WHERE Data_zatrudnienia>=2008;
+
+5.
+a)
+UPDATE pracownicy SET nazwisko="Mikolajczuk" WHERE Id_pracownika=3;
+b)
+UPDATE wypozyczenia SET data_zwrotu="2021-02-24" WHERE Nr_transakcji="1";
+UPDATE wypozyczenia SET data_zwrotu="2021-02-24" WHERE Nr_transakcji="2";
+UPDATE wypozyczenia SET data_zwrotu="2021-02-24" WHERE Nr_transakcji="4";
+c)
+UPDATE pracownicy SET Id_stanowisko="3" WHERE Id_pracownika="1";
+d)
+INSERT INTO wypozyczenia VALUES (null, 5, 4, 1, "2021-02-24", null);

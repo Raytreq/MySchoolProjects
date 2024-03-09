@@ -1,0 +1,6 @@
+Polecenie nauczyciela:
+W ramach dzisiejszych zajęć waszym zadaniem będzie napisanie skryptu wypełniającego formularz na stronie.
+Formularz znajduje się w załączniku. Można też wypełnić formularz który robicie w JS z Panią Basią na zajęciach.
+
+Link do formularza:
+https://docs.google.com/forms/d/e/1FAIpQLScSVDFU76rZvbO_tiIwSt6d9sOK0CZyS9KKMCP6cP5O5W5lVQ/viewform

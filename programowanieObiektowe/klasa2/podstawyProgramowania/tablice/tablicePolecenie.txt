@@ -1,0 +1,21 @@
+Polecenie nauczyciela:
+Zad 1.
+
+Napisz program wczytujący z klawiatury 20 liczb całkowitych. Wczytane liczby należy wydrukować na
+ekranie.   
+
+Zad 2.
+Napisz program wczytujący z klawiatury 20 liczb rzeczywistych. Wczytane liczby należy wydrukować na
+ekranie w odwrotnej kolejności.  
+
+Zad 3.
+Napisz program wczytujący z klawiatury n liczb całkowitych. Liczbę n należy pobrać z klawiatury. Jeśli
+wartość n podana przez użytkownika jest liczbą z zakresu od 1 do 30, wówczas program ma wczytać podaną
+ilość liczb całkowitych, a następnie wczytane liczby wydrukować na ekranie. Jeśli natomiast podana wartość n
+jest liczbą spoza przedziału [1; 30], wówczas program kończy pracę drukując stosowny komunikat.
+W zadaniu należy wykorzystać trzydziestoelementową tablicę liczb całkowitych.    
+
+Zad 4.
+Napisz program wczytujący z klawiatury n liczb całkowitych. Program ma znaleźć największą spośród
+podanych liczb oraz wydrukować na ekranie informację mówiącą o tym, ile razy największa liczba wystąpiła w
+podanym ciągu liczb.   

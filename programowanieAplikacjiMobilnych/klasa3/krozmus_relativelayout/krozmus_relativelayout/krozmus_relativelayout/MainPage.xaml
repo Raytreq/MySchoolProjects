@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="krozmus_relativelayout.MainPage"
+             BackgroundColor="White">
+
+    
+    <RelativeLayout>
+        
+        <BoxView BackgroundColor = "#f7f7f7" 
+                 RelativeLayout.HeightConstraint="{ConstraintExpression 
+                    Type=RelativeToParent, 
+                    Property=Height, 
+                    Factor=0.28}" 
+                 RelativeLayout.WidthConstraint="{ConstraintExpression 
+                    Type=RelativeToParent, 
+                    Property=Width, 
+                    Factor=1}" />
+
+        <Label FontSize="60"  TextColor="#33353a" FontAttributes="Bold" Text="$11.95" RelativeLayout.XConstraint="95" RelativeLayout.YConstraint="26"/>
+        <Button  Text = "Add $7.99 credit" BackgroundColor="#1695A3" CornerRadius = "30" HeightRequest="42" FontSize="15" FontAttributes="Bold" RelativeLayout.XConstraint="100" WidthRequest="204" RelativeLayout.YConstraint="120"/>
+
+        <StackLayout RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.31}" Margin="38,0">
+
+            <Label Text="Why pay for credit?" FontSize="15" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" Margin="16"/>
+            <Label Text="Because you can reach people who aren't on SkyApp by calling mobile and landline numbers, or spending SMS, at low-cost rates" TextColor="Black" FontSize="13"/>
+            
+        </StackLayout>
+        
+    </RelativeLayout>
+
+    
+</ContentPage>

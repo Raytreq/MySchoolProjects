@@ -1,0 +1,18 @@
+Polecenie nauczyciela:
+1. Napisz formularz, składający się z dwóch pól:
+– pole tekstowe o etykiecie ilość gości
+– pole checkbox o etykiecie poprawiny
+Po każdorazowej zmianie wartości któregoś z pól, poniżej formularza ma się obliczyć całkowity koszt wesela, liczony w taki sposób, że liczbę gości mnożymy przez koszt pojedynczej osoby: 100zł, natomiast jeśli zaznaczone jest pole checkbox, co oznacza, że wyprawiane będą poprawiny, koszt wesela zwiększamy o 30%. Wynik obliczeń wypisywać się ma poniżej formularza.
+
+2. Napisz formularz składający się z 2 pól tekstowych oraz 6 przycisków. Pola tekstowe to odpowiednio miejsce na wpisanie przez użytkownika wartości zmiennych a oraz b. 6 przycisków oznacza działania: dodawanie, odejmowanie, mnożenie, dzielenie, reszta z dzielenia, dzielenie całkowite. 
+Po wprowadzeniu obu liczb i naciśnięciu jednego z przycisków wypisz pod formularzem rezultat działania. W przypadku niewypełnienia któregoś z pól tekstowym wypisz komunikat, który poinformuje użytkownika o takiej konieczności.
+
+
+3. Napisz formularz składający się z 5 pól tekstowych położonych jedno pod drugim. Obok każdego pola tekstowego znajdować się ma pole checkbox. Użytkownik wprowadza w pola tekstowe liczby całkowite (dopilnuj tego). Pod formularzem wyświetlać się ma suma liczb z pól tekstowych, ale tylko tych pól, koło których zaznaczony jest checkbox.
+
+
+4. Napisz formularz składający się z pola tekstowego o etykiecie liczba ogłoszeń, pola checkbox o etykiecie stały klient oraz przycisku. Po naciśnięciu przycisku obliczyć się ma koszt ogłoszenia, który zostanie wypisany nad formularzem. Koszt ogłoszenia oblicz w następujący sposób:
+– 1-50 ogłoszeń, cena 2zł za ogłoszenie
+– 51-100 ogłoszeń, cena 1,5zł za ogłoszenie
+– każde ogłoszenie powyżej 100 kosztuje 1zł.
+Dla stałych klientów naliczany jest rabat 20%.

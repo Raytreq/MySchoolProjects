@@ -1,0 +1,30 @@
+2TP/24 Krzysztof Rozmus
+
+5)
+SELECT SUM(wynagrodzenie), nazwa FROM pracownicy 
+INNER JOIN stanowiska USING (id_stanowisko) 
+GROUP BY nazwa;
+
+6)
+SELECT nazwa as "Na stanowisku:", "pracuje", count(*) as "liczba", "pracowników" FROM pracownicy 
+INNER JOIN stanowiska USING (id_stanowisko)  
+GROUP BY nazwa;
+
+7)
+SELECT miasto, count(*) as "Liczba pracowników" FROM pracownicy 
+GROUP BY miasto HAVING count(*)>2
+ORDER BY count(*) DESC;
+
+8)
+SELECT nazwa, AVG(wynagrodzenie),count(*) as "Liczba pracowników" FROM pracownicy 
+INNER JOIN stanowiska USING (id_stanowisko) WHERE data_zatrudnienia <= "2007-12-31"
+GROUP BY nazwa;
+
+9)
+SELECT MIN(wynagrodzenie), miasto FROM pracownicy
+GROUP BY miasto
+ORDER BY MIN(wynagrodzenie) DESC;
+
+10)
+SELECT upper(substr(nazwisko, 1, 1)) as "Pierwsza litera nazwiska czytelnika", count(*) as "Liczba danych czytelników" FROM czytelnicy
+GROUP BY upper(substr(nazwisko, 1, 1));

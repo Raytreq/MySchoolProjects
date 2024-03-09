@@ -1,0 +1,3 @@
+Polecenie nauczyciela:
+W ramach dzisiejszych zajęć proszę o wykonanie zadania praca z ekranem i napisaniem skryptu który wykona zrzut z ekranu. 
+Dodatkowo proszę rozbudować skrypt który zaczytywał koordynaty myszki aby dodatkowo odczytywał kolor pixela na którym znajduje się wskaźnik.

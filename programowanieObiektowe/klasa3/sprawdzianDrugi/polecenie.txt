@@ -1,0 +1,77 @@
+Polecenie nauczyciela:
+Napisać klasę rower
+złożoną z pól:
+
+
+    AktualnyBieg
+    Producent
+    Liczba Biegów
+    Typ (miejski, trekkingowy,
+    MTB, gravel, szosowy, cross) - definiowane jako enum
+    Cena
+    Akcesoria - tablica stringów
+
+
+
+
+ 
+
+
+konstruktor z parametrami
+
+
+ 
+
+
+ 
+
+
+Zdefiniuj operator
++. -
+
+
+ 
+
+
+Rower + 2 -->
+zmiana biegu w górę o 2 pozycję, nie większe niż LiczbaBiegów
+
+
+Rower - 2 -->
+zmiana biegu w dół o 2 pozycję, nie większe niż LiczbaBiegów
+
+
+ 
+
+
+Rower +
+"przednie światło" --> dodanie do akcesoriów przednich świateł
+
+
+ 
+
+
+Operator > -->
+true jeśli cena jest wyższa
+
+
+ 
+
+
+Operator == -->
+liczba biegów, producent, typ roweru są takie same
+
+
+ 
+
+
+Operator rzutowania
+na string -->  wyświetla wartości
+wszystkich pól z klasy
+
+
+ 
+
+
+Operator rzutowania
+na int --> zwraca aktualny bieg

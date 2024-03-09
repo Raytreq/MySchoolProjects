@@ -1,0 +1,40 @@
+Krzysztof Rozmus 2TP/24
+
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+//komentarze służą do pokazania zmiennych w celu przetestowania
+int main() {
+    
+    srand(time(NULL));
+    int rnd =(rand()% 1000 + 1);
+    cout << "Podaj liczbę w zakresie od 1 do 1000\n";
+    int tries = 0;
+    int x;
+    cin >> x;
+    do {
+        if(x > 1000 || x < 1) {
+            cout << "Podana liczba nie jest w poprawnym przedziale\n";
+            cin>> x;
+        }
+        if(x > rnd){
+            cout << "Wylosowana liczba jest mniejsza od podanej. Spróbuj jeszcze raz: \n";
+            cin >> x;
+            tries+=1;
+            //cout << rnd << endl;
+        }
+       
+        if(x < rnd) {
+            cout << "Wylosowana liczba jest większa od podanej. Spróbuj jeszcze raz: \n";
+            cin >> x;
+            tries+=1;
+            //cout << tries <<endl;
+            //cout << rnd << endl;
+        }
+    } while(x != rnd);
+    cout << "Trafiłeś w wylosowaną liczbę, czyli '" << rnd << "'. Strzelałeś/aś " << tries << " razy!" << endl;
+    return 0;
+    
+}
+   

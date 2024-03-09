@@ -1,0 +1,16 @@
+2TP/24 Krzysztof Rozmus
+
+9)
+SELECT nr_czytelnika, imie, nazwisko 
+	FROM czytelnicy INNER JOIN wypozyczenia USING(nr_czytelnika)
+	INNER JOIN ksiazki USING(sygnatura) 
+	WHERE tytul="Kodeks ruchu drogowego";
+
+10)
+SELECT concat(pracownicy.imie," ", pracownicy.nazwisko) as "Pracownik", concat(czytelnicy.imie, " ", czytelnicy.nazwisko) as "Czytelnik", ksiazki.tytul, concat(autor.imie, " ", autor.nazwisko) as "Autor", wypozyczenia.data_wypozyczenia FROM wypozyczenia INNER JOIN czytelnicy USING(nr_czytelnika) INNER JOIN ksiazki USING(sygnatura) INNER JOIN pracownicy USING(id_pracownika) INNER JOIN autor USING(id_autor) ORDER BY data_wypozyczenia ASC;
+
+11)
+SELECT DISTINCT pracownicy.id_pracownika, pracownicy.imie, pracownicy.nazwisko
+	FROM pracownicy INNER JOIN wypozyczenia USING(id_pracownika)
+	INNER JOIN czytelnicy USING(nr_czytelnika)
+	WHERE czytelnicy.imie="Rafal" AND czytelnicy.nazwisko="Szala";

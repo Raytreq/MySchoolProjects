@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy</title>
+    <link rel="stylesheet" href="styl1.css">
+    <meta name="author" conten="Krzysztof Rozmus">
+
+</head>
+
+<body>
+
+    <nav>
+        <h3>Dostępne gatunki filmu</h3>
+        <ol>
+            <li>Sci-Fi</li>
+            <li>Animacja</li>
+            <li>Dramat</li>
+            <li>Horror</li>
+            <li>Komedia</li>
+        </ol>
+        <p>
+            <a href="img/kadr.jpg" target="_blank">Pobierz obraz</a>
+        </p>
+        <p>
+            <a href="repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a>
+        </p>
+    </nav>
+
+    <section class="header">
+        <h1>FILMOTEKA</h1>
+    </section>
+
+    <section class="form">
+        <form action="dodaj.php" method="post">
+            <label for="title">Tytuł: </label>
+            <input type="text" id="title" name="title">
+            <br>
+            <label for="genre">Gatunek filmu: </label>
+            <input type="text" id="genre" name="genre">
+            <br>
+            <label for="year">Rok produkcji: </label>
+            <input type="text" id="year" name="year">
+            <br>
+            <label for="rating">Ocena: </label>
+            <input type="number" id="rating" name="rating">
+            <br>
+            <input type="reset" value="Wyczyść">
+            <input type="submit" value="Wyślij" name="wyslij">
+            <br>
+        </form>
+    </section>
+
+    <section class="image">
+        <img src="img/kadr.jpg" alt="Zdjęcia filmowe">
+    </section>
+
+    <footer>
+        <p>Autor strony: 05300606095</p>
+    </footer>
+
+</body>
+
+</html>

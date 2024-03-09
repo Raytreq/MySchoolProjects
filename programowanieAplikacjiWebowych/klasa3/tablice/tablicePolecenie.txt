@@ -1,0 +1,2 @@
+Polecenie nauczyciela:
+Dla przykładowej tablicy pokaż działanie funkcji pop, push, shift, unshift, indexOf, slice, sort, splice, concat.

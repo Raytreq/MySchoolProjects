@@ -1,0 +1,149 @@
+/*OGÓLNE STYLE*/
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+/*STYLE BANNERA*/
+.banner{
+    background-color: #222;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner img{
+    margin-top: 10px;
+    height: 86px;
+}
+
+.banner h3 {
+    margin: 4px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/*STYLE MENU GŁÓWNEGO*/
+.menuGlowne {
+    background-color: #222;
+    padding: 10px;
+    padding-top: 2px;
+    font-family: 'Inter', sans-serif;
+}
+
+.menuGlowne ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menuGlowne ul li{
+    font-style: normal;
+    display: inline;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menuGlowne a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menuGlowne a:hover{
+    color: #ce766c;
+}
+
+/*STYLE MENU BOCZNEGO*/
+.menuBoczne{
+    background-color: #52211c;
+    float: left;
+    width: 18%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    height: 440px;
+}
+
+.menuBoczne ul{
+    list-style-type: none;
+}
+
+.menuBoczne a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menuBoczne a:hover{
+    color: #ce766c;
+}
+/*STYLE TREŚCI*/
+.tresc{
+    background-color: #f5cfcb; 
+    width: 100%; 
+    height: 440px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tresc p {
+    margin: 0;
+    padding: 10px;
+}
+
+.tresc h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.tresc h3 {
+    margin: 0;
+    padding: 10px;
+}
+
+.tresc ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.tresc ul {
+    padding: 12px;
+}
+
+/*STYLE STOPKI*/
+.stopka {
+    background-color: #222;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    bottom: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.stopka h3{
+    margin: 14px;
+    font-size: 21px;
+}
+
+.stopka a{
+    text-decoration: none;
+    color:white;
+}
+
+.stopka a:hover{
+    text-decoration: none;
+    color: #ce766c;
+}

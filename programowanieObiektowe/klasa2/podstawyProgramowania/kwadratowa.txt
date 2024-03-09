@@ -1,0 +1,145 @@
+Krzysztof Rozmus 24/2TP
+
+1 - 2 zadanie:
+#include <iostream>
+using namespace std;
+
+class prostopadloscian{
+public:
+    float a,b,c;
+    
+    prostopadloscian(float a, float b, float c){
+        this->a=a;
+        this->b=b;
+        this->c=c;
+    }
+    void objetosc(){   
+        cout<<"Objętość prostopadłościanu wynosi: "<<a*b*c;
+    }
+    float objetosc2() {
+        return a*b*c;
+    }
+};
+
+int main() {
+    float x,y,z;
+    cout<<"Podaj wysokość prostopadłościanu: ";
+    cin>>x;
+    cout<<"Podaj szerokość prostopadłościanu: ";
+    cin>>y;
+    cout<<"Podaj długość prostopadłościanu: ";
+    cin>>z;
+    prostopadloscian figura = prostopadloscian(x,y,z);
+    figura.objetosc();
+    cout<<"\n"<<figura.objetosc2()<<"\n";
+    prostopadloscian figura2 = prostopadloscian(2,3,4);
+    figura2.objetosc();
+    cout<<"\n"<<figura2.objetosc2();
+    return 0;
+}
+
+2 - 3 zadanie:
+#include <iostream>
+using namespace std;
+
+class kula{
+public:
+    float r;
+    
+    kula(float r){
+        this->r=r;
+    }
+    void pole(){   
+        cout<<"Pole kuli wynosi: "<<4*3.14*r*r;
+    }
+    float pole2() {
+        return 4*3.14*r*r;
+    }
+};
+
+int main() {
+    float x;
+    cout<<"Podaj promień kuli: ";
+    cin>>x;
+
+    kula figura = kula(x);
+    figura.pole();
+    cout<<"\n"<<figura.pole2()<<"\n";
+    kula figura2 = kula(3);
+    figura2.pole();
+    cout<<"\n"<<figura2.pole2();
+    return 0;
+}
+
+3 - 9 zadanie:
+#include <iostream>
+using namespace std;
+
+class funkcja{
+	public:
+		float a,b,c,x;
+		funkcja(float a, float b, float c, float x){
+			this->a=a;
+			this->b=b;
+			this->c=c;
+            this->x=x;
+		}
+		float funkcjaOblicz(){
+			return (x*x)*a+x*b+c;
+		}
+};
+
+int main(){
+	float ua, ub, uc, ux;
+	cout<<"Podaj a: "<<flush;
+	cin>>ua;
+	cout<<"Podaj b: "<<flush;
+	cin>>ub;
+	cout<<"Podaj c: "<<flush;
+	cin>>uc;
+    cout<<"Podaj x: "<<flush;
+	cin>>ux;
+	
+	funkcja funkcja1 = funkcja(ua,ub,uc,ux);
+    cout<<"a - "<<ua<<endl<<"b - "<<ub<<endl<<"c - "<<uc<<endl<<"x - "<<ux<<endl<<endl;
+	cout<<"Wartość funkcji kwadratowej wynosi: "<<funkcja1.funkcjaOblicz()<<endl<<endl;
+	
+	return 0;
+};
+
+4 - 10 zadanie:
+#include <iostream>
+
+using namespace std;
+
+class funkcja{
+	public:
+		float a,b,c;
+		
+		funkcja(float a, float b, float c){
+			this->a=a;
+			this->b=b;
+			this->c=c;
+		}
+		void printKwadratowa(){
+			cout<<"f(x) = "<<a<<"x^2 + "<<b<<"x + "<<c<<endl;
+		}
+};
+
+
+int main(){
+	float ua, ub, uc;
+	cout<<"Podaj a: "<<flush;
+	cin>>ua;
+	cout<<"Podaj b: "<<flush;
+	cin>>ub;
+	cout<<"Podaj c: "<<flush;
+	cin>>uc;
+	
+	funkcja funkcja1 = funkcja(ua,ub,uc);
+	
+	cout<<endl<<endl;
+    funkcja1.printKwadratowa();
+
+	return 0;
+};

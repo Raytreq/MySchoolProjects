@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "f696RN5XsgjHLFWLjDS6aZLARobLT6obqwyPE/c2/JD/NOEIEMDpRjetfqqiUo9ppl3HhXpRkiKsUiGc1p4i2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rejtr\\source\\repos\\pitagoras_krozmus\\pitagoras_krozmus\\pitagoras_krozmus\\pitagoras_krozmus.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rejtr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

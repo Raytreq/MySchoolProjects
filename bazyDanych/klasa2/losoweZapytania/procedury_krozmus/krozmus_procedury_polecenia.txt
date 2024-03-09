@@ -1,0 +1,43 @@
+Krzysztof Rozmus 24/2TP
+
+Stworzenie tabeli ksiazka:
+CREATE TABLE ksiazka (
+    id_k INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    tytul VARCHAR(50),
+    cena DECIMAL(11,2)
+);                 
+
+Stworzenie tabeli osoba:
+CREATE TABLE osoba (
+	Id_osoba INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    imie VARCHAR(30),
+    nazwisko VARCHAR(35),
+    email VARCHAR(60),
+    ulica VARCHAR(50),
+    miasto VARCHAR(35),
+    data_ur DATE
+);
+
+1)
+delimiter //
+CREATE PROCEDURE jeden (IN koszt DECIMAL(11,2))
+BEGIN
+select tytul, cena FROM ksiazka WHERE cena<koszt;
+END
+//
+
+2)
+delimiter //
+CREATE PROCEDURE dwa(IN podaj_imie VARCHAR(35), podaj_nazwisko VARCHAR(35))
+BEGIN
+select imie, nazwisko, email, ulica, miasto, data_ur from osoba where imie="podaj_imie" AND nazwisko="podaj_nazwisko";
+END
+//
+
+3)
+delimiter //
+CREATE PROCEDURE trzy(IN parametr INT)
+BEGIN
+update ksiazka SET cena = cena*parametr;
+END
+//

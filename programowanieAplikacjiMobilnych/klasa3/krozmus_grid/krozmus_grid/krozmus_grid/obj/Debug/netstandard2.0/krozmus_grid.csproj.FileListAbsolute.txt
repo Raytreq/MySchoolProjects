@@ -1,0 +1,15 @@
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.csproj.AssemblyReference.cache
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.AssemblyInfoInputs.cache
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.AssemblyInfo.cs
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\bin\Debug\netstandard2.0\krozmus_grid.deps.json
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\bin\Debug\netstandard2.0\krozmus_grid.dll
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\bin\Debug\netstandard2.0\krozmus_grid.pdb
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.dll
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\refint\krozmus_grid.dll
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\krozmus_grid.pdb
+C:\Users\Krzysiek\source\repos\krozmus_grid\krozmus_grid\krozmus_grid\obj\Debug\netstandard2.0\ref\krozmus_grid.dll

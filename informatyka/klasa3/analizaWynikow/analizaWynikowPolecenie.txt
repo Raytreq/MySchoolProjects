@@ -1,0 +1,6 @@
+Polecenie nauczyciela:
+Napisz program który zapyta użytkownika o podanie 1 pary liczb.(np. 4 i 13).
+Następnie program przeanalizuje wszystkie wyniki dotychczasowych losowań i zliczy te losowania w których liczy te zostały wylosowane razem w jednym losowaniu.
+Arkusz z aktualnymi wynikami  w załączniku.
+
+Przykładowo z tych danych program powinien zwrócić wartość 5

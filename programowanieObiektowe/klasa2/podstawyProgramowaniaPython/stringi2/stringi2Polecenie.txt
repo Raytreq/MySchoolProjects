@@ -1,0 +1,21 @@
+Polecenie nauczyciela:
+12. Napisz program, który wczyta od użytkownika zdanie. Wypisz z niego wszystkie litery w kolejności alfabetycznej.
+13. Napisz program, który wczyta od użytkownika zdanie. Zaszyfruj je szyfrem cezara.
+14. Napisz program, który wczyta od użytkownika ciąg znaków. Następnie wypisze go w następujący sposób
+(np. technikinformatyk):
+Aktualny znak t posiada indeks 0
+Aktualny znak e posiada indeks 1
+Aktualny znak c posiada indeks 2
+…
+15. Napisz program, który wczyta od użytkownika zdanie. Wypisz na ekran, jakich liter alfabetu zdanie to nie zawiera.
+16. Napisz program, który wczyta od użytkownika ciąg znaków. Wypisz na ekran wszystkie niepowtarzające się litery.
+17. Napisz program, który wczyta od użytkownika ciąg znaków. Wypisz na ekran pierwszy znak, który się powtórzy.
+18. Napisz program, który wczyta od użytkownika ciąg znaków. Wypisz go na ekran po usunięciu spacji.
+19. Napisz program, który wczyta od użytkownika ciąg znaków. Przesuń w nim wszystkie litery a na sam początek.
+Wypisz ciąg znaków na ekran.
+20. Napisz program, który wczyta od użytkownika zdanie. Wypisz je na ekran w taki sposób, że każdy jego wyraz
+będzie rozpoczynał się i kończył wielką literą.
+21. Napisz program, który wczyta od użytkownika zdanie. Wypisz ile jest w nim wyrazów.
+22. Napisz program, który wczyta od użytkownika zdanie. Wypisz z niego najdłuższy i najkrótszy wyraz.
+23. Napisz program, który wczyta od użytkownika ciąg znaków. Sprawdź czy ciąg ten jest palindromem.
+Np. kot – nie, kajak – tak.

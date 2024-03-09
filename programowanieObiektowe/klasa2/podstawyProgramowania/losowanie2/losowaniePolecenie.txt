@@ -1,0 +1,14 @@
+Polecenie nauczyciela:
+1. Program ma wylosować liczbę z zakresu <-100;100>  i wyświetlić średnią arytmetyczną liczb naturalnych nieparzystych do tej liczby.
+2. Program ma wylosować liczbę z zakresu <1;100>  i wyświetlić ilość liczb naturalnych parzystych oraz podać ich sumę.
+3. Program ma wylosować liczbę naturalną mniejszą od 1000 i podać czy wylosowana liczba nie jest pierwsza.
+Dodatkowe:
+4. Program ma wprowadzić 15 ocen - całkowitych lub półek tzn. [6; 5,5; 5; 4,5; 4; 3,5; 3; 2,5; 2; 1,5; 1] . i wyświetlić ile zostało wpisanych danych liczb oraz średnią arytmetyczną tych liczb.
+Np. 
+6 - 1
+5,5 - 0
+5 - 3 
+... 
+co oznacza że wpisano jedną szóstkę
+5,5 czyli 5+ nie było
+piątkę 3 razy

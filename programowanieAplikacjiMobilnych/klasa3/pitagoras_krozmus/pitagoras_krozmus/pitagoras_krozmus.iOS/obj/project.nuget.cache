@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WAogzvwwm+5Gcd//r2eOjd60DojcmOdtRR5QZcDO4bz2UTzE0N/F07COOeMyO03Z4roXxGPz31ZKbT+WDaVUbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rejtr\\source\\repos\\pitagoras_krozmus\\pitagoras_krozmus\\pitagoras_krozmus.iOS\\pitagoras_krozmus.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rejtr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\rejtr\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

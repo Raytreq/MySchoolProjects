@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projektimage.MainPage">
+
+    
+    <AbsoluteLayout>
+        <Button Text="Poprzednie" AbsoluteLayout.LayoutBounds="10,30" Clicked="Previous"/>
+        <ActivityIndicator BindingContext="{x:Reference Image}" IsRunning="{Binding Path=IsLoading}" AbsoluteLayout.LayoutBounds="180,30"/>
+        <Button Text="Następne" AbsoluteLayout.LayoutBounds="300,30" Clicked="Next"/>
+        <Image x:Name="Image" Aspect="AspectFit" AbsoluteLayout.LayoutBounds="0,280"/>
+    </AbsoluteLayout>
+
+</ContentPage>

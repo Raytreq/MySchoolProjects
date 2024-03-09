@@ -1,0 +1,102 @@
+Krzysztof Rozmus 24/2TP
+
+1)
+#include <iostream>
+#include <cstdlib>
+#include <ctime> 
+
+using namespace std;
+
+int main() {
+    srand(time(NULL));
+    int liczba = rand() % 201 + (-100);
+    cout << "Wylosowana liczba wynosi: " << liczba << endl;
+    
+    if(liczba<2) {
+        cout << "Wylosowana liczba jest za niska, żeby móc na jej podstawie wyliczyć średnię z liczb naturalnych nieparzystych poprzedzających ją. Uruchom ponownie program.";
+        return 0;
+    };
+
+    int n = 0;
+    int ilosc = 0;
+    
+    for(int i = 0;i<liczba;i++) {
+        if (i%2==1) {
+            n = n + i;
+            ilosc = ilosc + 1;
+        };
+    };
+            
+    cout << "Ilość liczb spełniających warunek do średniej: " << ilosc << endl;
+    cout << "Średnia arytmetyczna liczb naturalnych nieparzystych poprzedzającyh wylosowaną liczbę wynosi: " << n/ilosc << endl;
+    
+    return 0;
+};
+
+2)
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    srand(time(NULL));
+    int liczba = rand() % 100+1;
+    
+    int n = 0;
+    int ilosc = 0;
+    
+    cout <<"Wylosowana liczba wynosi: "<< liczba << endl;
+    
+    if(liczba<3) {
+        cout << "Wylosowana liczba jest za niska, żeby móc na jej podstawie wyliczyć sumę z liczb naturalnych parzystych poprzedzających ją, ponieważ owe nie wystąpiły. Uruchom ponownie program." << endl;
+        return 0;
+    };
+    
+    for(int i = 0;i<liczba;i++) {
+        if (i%2 == 0) {
+            n = n + i;
+            ilosc = ilosc + 1;
+        };
+    };
+    
+    cout << "Ilość liczb parzystych wynosi: " << ilosc << endl;
+    cout << "Suma liczb parzystych wynosi: " << n <<endl;
+    
+    return 0;
+};
+
+3)
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+bool pier(int x) {
+    if(x<2) {
+        return false;
+    };
+
+    for(int i=2;i*i<=x;i++) {
+        if(x%i==0) {
+            return false;
+        };
+    };
+    return true;
+};
+
+int main() {
+    srand(time(NULL));
+    int n = rand() % 999+1;
+    
+    cout <<"Wylosowana liczba wynosi: "<< n<< endl;
+
+    if(pier(n)==1)
+        cout<< "Wylosowana liczba ("<< n <<") jest liczbą pierwszą."<<endl;
+    else
+        cout<< "Wylosowana liczba ("<< n <<") nie jest liczbą pierwszą."<<endl;
+
+    return 0;
+    };

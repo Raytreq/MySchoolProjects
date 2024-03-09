@@ -1,0 +1,69 @@
+Zadanie 1
+-Robilem w PHPMYADMIN
+
+Zadanie 2
+CREATE DATABASE baza1;
+
+Zadanie 3
+CREATE DATABASE baza2 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+Zadanie 4
+SHOW DATABASES;
+
+Zadanie 5
+CREATE DATABASE bazaRomana;
+DROP DATABASE bazaRomana;
+
+Zadanie 6
+USE world;
+SHOW TABLES;
+
+Zadanie 7
+USE baza1;
+CREATE TABLE users( 
+id INT AUTO_INCREMENT PRIMARY KEY,
+imie VARCHAR(25) NOT NULL, 
+nazwisko VARCHAR(30) NOT NULL, 
+email VARCHAR(50), 
+wiek INT(3), 
+data_rejestracji DATE NOT NULL
+) ; 
+
+Zadanie 8
+USE baza1;
+INSERT INTO users VALUES(NULL, "Adam", "Rogal", "adamr232@gmail.com", "32", "2014-10-13"),
+			(NULL, "Zbigniew", "Aleksandrowicz", "za@zag.org", "59", "2012-04-23"),
+			(NULL, "Piotr", "Quake", "q@librotic.net", "72", "1998-02-22"),
+			(NULL, "Hermenegilda",  "Konstantynopolitañczykiewiczówna", "kk1998@gmail.com", "40", "2000-01-22");
+	
+Zadanie 9
+USE baza1;
+SHOW COLUMNS FROM users;
+
+Zadanie 10
+USE baza1;
+UPDATE users SET email="qauke_piotr@happy_pony.org" WHERE imie="Piotr" AND nazwisko="Quake";
+
+Zadanie 11a
+USE baza1;
+SELECT * FROM users WHERE wiek="32";
+
+Zadanie 11b
+USE baza1;
+SELECT * FROM users WHERE wiek<50;
+
+Zadanie 12
+USE baza1;
+SELECT * FROM USERS WHERE email like"%@gmail.com";
+
+Zadanie 13
+USE baza1;
+SELECT id, email FROM users;
+
+Zadanie 14
+USE baza1;
+DELETE FROM users WHERE imie="Adam" AND nazwisko="Rogal";	
+
+Zadanie 15
+USE baza1;
+DROP TABLE users;

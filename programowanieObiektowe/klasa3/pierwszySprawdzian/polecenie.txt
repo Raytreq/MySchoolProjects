@@ -1,0 +1,4 @@
+Polecenie nauczyciela:
+W załączniku jest pliku, który zawiera bazę pracowników. Utworzyć model danych oraz wczytać te dane w programie używając odpowiedniej biblioteki z NuGet. 
+Używając LINQ wyświetl imię i nazwisko kobiet z przedziału wiekowego 25-50 lat.
+*Wyszukaj bibliotekę, która pozwala na logowanie w aplikacji tzw. loggera. Dodaj ją do wybranej klasy projektu, skonfiguruj i dodaj 1 komunikat.

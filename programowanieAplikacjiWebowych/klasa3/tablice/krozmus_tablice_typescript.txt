@@ -1,0 +1,32 @@
+// Krzysztof Rozmus 3TP/ nr chyba 23
+
+let podzespoly = ["Motherboard", "CPU", "PSU", "GPU", "RAM", "Disk", "Cooler", "Case"];
+let modele = ["Ryzen 5 5600X", "RTX 3070", "Vipers 2 x 16GB", "Dark Rock Pro 4"];
+
+let popPrzyklad = podzespoly.pop();
+console.log(popPrzyklad);
+
+let pushPrzyklad = podzespoly.push("Thermal Compund");
+console.log(pushPrzyklad);
+
+let shiftPrzyklad = podzespoly.shift();
+console.log(shiftPrzyklad);
+
+let unshiftPrzyklad = podzespoly.unshift("Heatsink");
+console.log(unshiftPrzyklad);
+
+let indexOfPrzyklad = podzespoly.indexOf("GPU");
+console.log(indexOfPrzyklad);
+
+let slicePrzyklad = podzespoly.slice(3,5);
+console.log(slicePrzyklad);
+
+let sortPrzyklad = podzespoly.sort();
+console.log(sortPrzyklad);
+
+let splicePrzyklad = podzespoly.splice(5, 2, "Cables");
+console.log(splicePrzyklad);
+console.log(podzespoly);
+
+let concatPrzyklad = podzespoly.concat(modele);
+console.log(concatPrzyklad);

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="krozmus_grid.MainPage"
+             BackgroundColor = "#354242">
+
+    <StackLayout HorizontalOptions="Center">
+        <Label x:Name="PhoneNumber" TextColor="#fff" FontSize="50" CharacterSpacing="0" HorizontalOptions="Center" Padding="40,40,40,0"/>
+        
+        <Grid Padding="40" RowSpacing="10" ColumnSpacing="10">
+            <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="1" FontSize="30" CornerRadius="30" Clicked="OneClicked" HeightRequest="80"/>
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="2" FontSize="30" CornerRadius="30" Clicked="TwoClicked"/>
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="3" FontSize="30" CornerRadius="30" Clicked="ThreeClicked"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="4" FontSize="30" CornerRadius="30" Clicked="FourClicked"/>
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="5" FontSize="30" CornerRadius="30" Clicked="FiveClicked"/>
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="6" FontSize="30" CornerRadius="30" Clicked="SixClicked"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="7" FontSize="30" CornerRadius="30" Clicked="SevenClicked"/>
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="8" FontSize="30" CornerRadius="30" Clicked="EightClicked"/>
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="9" FontSize="30" CornerRadius="30" Clicked="NineClicked"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="4" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button BackgroundColor="#fff" TextColor="#28282c" Text="0" FontSize="30" CornerRadius="30" Clicked="ZeroClicked"/>
+            </StackLayout>
+
+        </Grid>
+
+        <Button BackgroundColor="#96ca2d" TextColor="#28282c" Text="Dial" FontSize="40" CornerRadius="30" Clicked="DialClicked"/>
+    </StackLayout>
+
+</ContentPage>
