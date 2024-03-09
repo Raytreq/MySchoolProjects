@@ -7,11 +7,11 @@ I want this repository to be somewhat of a representation of various work given 
 ![what-huh](https://github.com/Raytreq/MySchoolProjects/assets/136091294/714c8d43-0748-453e-97f0-95152e452f0a)
 
 ###The repository consists of 5 main folders, mostly divided by school subjects:
-*<a href="https://github.com/Raytreq/MySchoolProjects/tree/main/bazyDanych">bazyDanych</a> *(All things related to learning databases)*
-*<a href="https://github.com/Raytreq/MySchoolProjects/tree/main/informatyka/klasa3">informatyka</a> *(General "computer science")*
-*<a href="https://github.com/Raytreq/MySchoolProjects/tree/main/programowanieAplikacjiMobilnych/klasa3">programowanieAplikacjiMobilnych</a> *(Mobile applications)*
-*<a href="https://github.com/Raytreq/MySchoolProjects/tree/main/programowanieAplikacjiWebowych">programowanieAplikacjiWebowych</a> *(Web applications and development)*
-*<a href="https://github.com/Raytreq/MySchoolProjects/tree/main/programowanieObiektowe">programowanieObiektowe</a> *(Object-oriented programming)*
+* <a href="https://github.com/Raytreq/MySchoolProjects/tree/main/bazyDanych">bazyDanych</a> *(All things related to learning databases)*
+* <a href="https://github.com/Raytreq/MySchoolProjects/tree/main/informatyka/klasa3">informatyka</a> *(General "computer science")*
+* <a href="https://github.com/Raytreq/MySchoolProjects/tree/main/programowanieAplikacjiMobilnych/klasa3">programowanieAplikacjiMobilnych</a> *(Mobile applications)*
+* <a href="https://github.com/Raytreq/MySchoolProjects/tree/main/programowanieAplikacjiWebowych">programowanieAplikacjiWebowych</a> *(Web applications and development)*
+* <a href="https://github.com/Raytreq/MySchoolProjects/tree/main/programowanieObiektowe">programowanieObiektowe</a> *(Object-oriented programming)*
 
 In each folder there are subfolders like for example "klasa4", because I sorted each subject into school years, "klasa**1**" being the **first** year, "klasa**2**" being the **second** year and so on.
 Each school year folder contains specific projects.  
